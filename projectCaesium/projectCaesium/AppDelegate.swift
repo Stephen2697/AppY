@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  projectCaesium
 //
-//  Created by Stephen Alger on 13/04/2018.
+//  Created by Stephen Alger.
 //  Copyright © 2018 Stephen Alger. All rights reserved.
 //
 

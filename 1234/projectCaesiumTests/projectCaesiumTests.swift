@@ -1,15 +1,15 @@
 //
-//  _23Tests.swift
-//  123Tests
+//  projectCaesiumTests.swift
+//  projectCaesiumTests
 //
 //  Created by Stephen Alger on 13/04/2018.
 //  Copyright © 2018 Stephen Alger. All rights reserved.
 //
 
 import XCTest
-@testable import _23
+@testable import projectCaesium
 
-class _23Tests: XCTestCase {
+class projectCaesiumTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

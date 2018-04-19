@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9ZT-Bh-lkQ">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -83,9 +83,7 @@
                     <size key="freeformSize" width="392" height="1500"/>
                     <connections>
                         <outlet property="dispName" destination="kT5-Z1-Mbs" id="oOL-Wl-och"/>
-                        <outlet property="dsiplayedFoodItem" destination="eRp-pJ-usL" id="08W-aI-ufz"/>
                         <outlet property="hi" destination="153-m1-qah" id="iU9-li-wRV"/>
-                        <outlet property="nameFoodItem" destination="3pF-xU-HDO" id="mA0-qF-jGB"/>
                     </connections>
                 </viewController>
             </objects>
@@ -312,13 +310,13 @@
                         <viewLayoutGuide key="safeArea" id="252-EK-ruM"/>
                     </view>
                     <connections>
-                        <outlet property="dispName" destination="eRp-pJ-usL" id="8LC-m3-Uy9"/>
-                        <outlet property="enterName" destination="3pF-xU-HDO" id="pEX-V7-bkD"/>
+                        <outlet property="input" destination="3pF-xU-HDO" id="N7g-Zv-8F0"/>
+                        <outlet property="output" destination="eRp-pJ-usL" id="kPK-zh-h0c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GHs-Zx-IaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1175" y="-128"/>
+            <point key="canvasLocation" x="998" y="-140"/>
         </scene>
     </scenes>
     <resources>

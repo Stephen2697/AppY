@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9457FAAE2080FA0A00830784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FAAD2080FA0A00830784 /* AppDelegate.swift */; };
-		9457FAB02080FA0A00830784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FAAF2080FA0A00830784 /* ViewController.swift */; };
 		9457FAB32080FA0A00830784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9457FAB12080FA0A00830784 /* Main.storyboard */; };
 		9457FAB52080FA0B00830784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9457FAB42080FA0B00830784 /* Assets.xcassets */; };
 		9457FAB82080FA0B00830784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9457FAB62080FA0B00830784 /* LaunchScreen.storyboard */; };
 		9457FAC32080FA0B00830784 /* projectCaesiumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FAC22080FA0B00830784 /* projectCaesiumTests.swift */; };
 		9457FACE2080FA0B00830784 /* projectCaesiumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FACD2080FA0B00830784 /* projectCaesiumUITests.swift */; };
 		9457FADC2084FE1000830784 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9457FADB2084FE1000830784 /* Default-568h@2x.png */; };
-		9457FADE2088DDAD00830784 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FADD2088DDAD00830784 /* FoodItem.swift */; };
+		9457FAE220893BF200830784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FAAD2080FA0A00830784 /* AppDelegate.swift */; };
+		9457FAE320893BF200830784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FAAF2080FA0A00830784 /* ViewController.swift */; };
+		9457FAE420893BF200830784 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FADD2088DDAD00830784 /* FoodItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +51,7 @@
 		9457FACF2080FA0B00830784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9457FADB2084FE1000830784 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9457FADD2088DDAD00830784 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		9457FADF208937C700830784 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 		9457FAA12080FA0A00830784 = {
 			isa = PBXGroup;
 			children = (
+				9457FAE520893FB100830784 /* File */,
 				9457FADB2084FE1000830784 /* Default-568h@2x.png */,
 				9457FAAC2080FA0A00830784 /* projectCaesium */,
 				9457FAC12080FA0B00830784 /* projectCaesiumTests */,
@@ -129,6 +131,14 @@
 				9457FACF2080FA0B00830784 /* Info.plist */,
 			);
 			path = projectCaesiumUITests;
+			sourceTree = "<group>";
+		};
+		9457FAE520893FB100830784 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				9457FADF208937C700830784 /* File.swift */,
+			);
+			name = File;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9457FAB02080FA0A00830784 /* ViewController.swift in Sources */,
-				9457FADE2088DDAD00830784 /* FoodItem.swift in Sources */,
-				9457FAAE2080FA0A00830784 /* AppDelegate.swift in Sources */,
+				9457FAE320893BF200830784 /* ViewController.swift in Sources */,
+				9457FAE420893BF200830784 /* FoodItem.swift in Sources */,
+				9457FAE220893BF200830784 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

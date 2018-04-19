@@ -8,10 +8,12 @@
 
 import UIKit
 
-class FoodItem {
+class FoodItem
+{
     
     //MARK: Food Variables
-    var logTime : Time
+    var LogTime: String
+    var gramSize: Int
     var foodName: String
     var foodPhoto: UIImage
     var foodCarbs: Int
@@ -20,27 +22,34 @@ class FoodItem {
     var foodCalories: Int
     var expCalories: Int
     
-    init?(foodName: String, foodPhoto: UIImage?, foodCarbs: Int, foodFats: Int, foodProteins: Int, foodCalories: Int) {
+    //MARK: Initialisation
+    
+    init?(Time:String, Gram: Int, Name: String, Photo: UIImage?, Carbs: Int, Fats: Int, Proteins: Int, Kcals: Int)
+    {
         
-        // Initialization should fail if there is no name or if the rating is negative.
-        if (foodName.isEmpty) || (foodCarbs<0) || (foodFats<0) || (foodProteins<0) || (foodCalories<0)
+        // Initialisation will return nil value should any of the following conditions be true
+        if ( (Name.isEmpty) || (Carbs<0) || (Fats<0) || (Proteins<0) || (Kcals<0) )
         {
             return nil
-        }
+        } //end
         
         // Initialize stored properties.
-        self.logTime = //get time
-            self.foodName = foodName
-        self.foodPhoto = foodPhoto
-        self.foodCarbs = foodCarbs
-        self.foodFats = foodFats
-        self.foodProteins = foodProteins
-        self.foodCalories = foodCalories
-        self.expCalories = ((foodCarbs*4)+(foodFats*9)+(foodProteins*4))
+        self.LogTime = Time //get time
+        self.foodName = Name
+        self.gramSize = Gram
+        self.foodPhoto = Photo!
+        self.foodCarbs = Carbs
+        self.foodFats = Fats
+        self.foodProteins = Proteins
+        self.foodCalories = Kcals
+        self.expCalories = ((Carbs*4)+(Fats*9)+(Proteins*4))
         //print("Expected Calories is \(self.expCalories)")
         
-    }
+
+    }//end initialisation
     
-}
+    
+    
+} //end class specifier
 
 

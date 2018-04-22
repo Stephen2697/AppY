@@ -19,21 +19,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        input.delegate = self
+//        input.delegate = self
     }
     
     //MARK: UITextFieldDelegate
     //Using a delegate to handle textfield interaction
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool
-    {
-        textField.resignFirstResponder()
-        return true
-    }
-    
-    func textFieldDidEndEditing(_ textField: UITextField)
-    {
-        output.text = textField.text
-    }
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+//    {
+//        textField.resignFirstResponder()
+//        return true
+//    }
+//
+//    func textFieldDidEndEditing(_ textField: UITextField)
+//    {
+//        output.text = textField.text
+//    }
     
 }
 

@@ -10,6 +10,11 @@ import UIKit
 
 class FoodItemTableViewController: UITableViewController {
 
+    //MARK: Properties
+    
+    //create array of objects of class type: foodItem
+    var foodItems = [FoodItem]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -91,5 +96,16 @@ class FoodItemTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    //MARK: Private Methods
+    
+    private func loadSampleFoods() {
+        
+        //load in 3 food images
+        let photo1 = UIImage(named: "meal1")
+        let photo2 = UIImage(named: "meal2")
+        let photo3 = UIImage(named: "meal3")
+        
+    }
 
 }

@@ -16,6 +16,7 @@
 		9457FAE220893BF200830784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FAAD2080FA0A00830784 /* AppDelegate.swift */; };
 		9457FAE320893BF200830784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FAAF2080FA0A00830784 /* ViewController.swift */; };
 		9457FAE420893BF200830784 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FADD2088DDAD00830784 /* FoodItem.swift */; };
+		946CD325208E12E60043E5A5 /* FoodItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946CD324208E12E60043E5A5 /* FoodItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		9457FADB2084FE1000830784 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9457FADD2088DDAD00830784 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		9457FADF208937C700830784 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		946CD324208E12E60043E5A5 /* FoodItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				9457FAAD2080FA0A00830784 /* AppDelegate.swift */,
 				9457FAAF2080FA0A00830784 /* ViewController.swift */,
 				9457FAB12080FA0A00830784 /* Main.storyboard */,
+				946CD324208E12E60043E5A5 /* FoodItemTableViewCell.swift */,
 				9457FADD2088DDAD00830784 /* FoodItem.swift */,
 				9457FAB42080FA0B00830784 /* Assets.xcassets */,
 				9457FAB62080FA0B00830784 /* LaunchScreen.storyboard */,
@@ -273,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				946CD325208E12E60043E5A5 /* FoodItemTableViewCell.swift in Sources */,
 				9457FAE320893BF200830784 /* ViewController.swift in Sources */,
 				9457FAE420893BF200830784 /* FoodItem.swift in Sources */,
 				9457FAE220893BF200830784 /* AppDelegate.swift in Sources */,

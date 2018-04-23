@@ -30,24 +30,43 @@ class FoodItemTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        
+        //alert the table view controller to only display one section.
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        //return a single row for every food object in the 'foodItems' array.
+        return foodItems.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        
+        // Table view cells are reused and should be dequeued using a cell identifier.
+        let cellIdentifier = "FoodItemTableViewCell"
+        
+        //We perform a downcasting on the returned object from the UITableViewCell class to our FoodItemTableViewCell by using 'as?'. We then use the 'guard let' expression to safely unwrap the optional just returned.
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? FoodItemTableViewCell  else {
+            fatalError("The dequeued cell is not an instance of FoodItemTableViewCell.")
+        }
+        
+        //Get the corresponding foodItem for the data source layout.
+        let foodItem = foodItems[indexPath.row]
+        
 
-        // Configure the cell...
-
+        cell.nameLabel.text = foodItem.foodName
+        cell.cellImage.image = foodItem.foodPhoto
+        cell.kcalLabel.text =   String(foodItem.foodCalories)
+        cell.carbLabel.text = String(foodItem.foodCarbs)
+        cell.proteinLabel.text = String(foodItem.foodProteins)
+        cell.fatLabel.text = String(foodItem.foodFats)
+        
+        
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.
@@ -106,7 +125,7 @@ class FoodItemTableViewController: UITableViewController {
 //        let photo5 = UIImage(named: "Sample5")
         
         guard let foodOne = FoodItem(Time: "20.30", Gram: 100, Name: "Crisps & Dip", Photo: photo1, Carbs: 30, Fats: 15, Proteins: 5, Kcals: 200) else {
-            fatalError("Unable to instantiate meal1")
+            fatalError("Unable to instantiate foodOne")
         }
         
         foodItems += [foodOne]

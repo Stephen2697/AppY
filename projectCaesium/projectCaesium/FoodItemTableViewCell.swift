@@ -11,6 +11,7 @@ class FoodItemTableViewCell: UITableViewCell {
 
     //MARK: Properties
     
+    @IBOutlet weak var cellImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var kcalLabel: UILabel!
     @IBOutlet weak var carbLabel: UILabel!

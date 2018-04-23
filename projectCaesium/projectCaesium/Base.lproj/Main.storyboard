@@ -454,6 +454,13 @@
                                                         </imageView>
                                                     </subviews>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="carbLabel" destination="Sa2-66-o5b" id="CVT-Ny-8By"/>
+                                                    <outlet property="fatLabel" destination="Ylp-eX-gtL" id="ZdT-Z1-ETG"/>
+                                                    <outlet property="kcalLabel" destination="4DB-gJ-h2r" id="cnP-1o-kUC"/>
+                                                    <outlet property="nameLabel" destination="OKd-y6-UWU" id="1xX-Up-irO"/>
+                                                    <outlet property="proteinLabel" destination="rde-au-PAe" id="pmr-CY-IlJ"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>

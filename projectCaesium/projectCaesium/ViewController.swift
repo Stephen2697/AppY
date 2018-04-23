@@ -13,8 +13,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //MARK: Properties
 
     
-    @IBOutlet weak var input: UITextField!
-    @IBOutlet weak var output: UILabel!
+//    @IBOutlet weak var input: UITextField!
+//    @IBOutlet weak var output: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

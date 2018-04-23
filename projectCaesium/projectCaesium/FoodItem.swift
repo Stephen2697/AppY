@@ -20,6 +20,7 @@ class FoodItem
     var foodFats: Int
     var foodProteins: Int
     var foodCalories: Int
+    var actCalories: Float
     var expCalories: Int
     
     //MARK: Initialisation
@@ -42,6 +43,7 @@ class FoodItem
         self.foodFats = Fats
         self.foodProteins = Proteins
         self.foodCalories = Kcals
+        self.actCalories = (Float(Kcals)*Float((Gram/100)))
         self.expCalories = ((Carbs*4)+(Fats*9)+(Proteins*4))
         //print("Expected Calories is \(self.expCalories)")
         

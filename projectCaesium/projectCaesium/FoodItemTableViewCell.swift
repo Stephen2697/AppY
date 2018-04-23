@@ -17,6 +17,7 @@ class FoodItemTableViewCell: UITableViewCell {
     @IBOutlet weak var carbLabel: UILabel!
     @IBOutlet weak var proteinLabel: UILabel!
     @IBOutlet weak var fatLabel: UILabel!
+
     
     override func awakeFromNib() {
         super.awakeFromNib()

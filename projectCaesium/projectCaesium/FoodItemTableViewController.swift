@@ -119,16 +119,33 @@ class FoodItemTableViewController: UITableViewController {
         
         //load in 3 food images
         let photo1 = UIImage(named: "Sample1")
-//        let photo2 = UIImage(named: "Sample2")
-//        let photo3 = UIImage(named: "Sample3")
-//        let photo4 = UIImage(named: "Sample4")
-//        let photo5 = UIImage(named: "Sample5")
+        let photo2 = UIImage(named: "Sample2")
+        let photo3 = UIImage(named: "Sample3")
+        let photo4 = UIImage(named: "Sample4")
+        let photo5 = UIImage(named: "Sample5")
         
         guard let foodOne = FoodItem(Time: "20.30", Gram: 100, Name: "Crisps & Dip", Photo: photo1, Carbs: 30, Fats: 15, Proteins: 5, Kcals: 200) else {
             fatalError("Unable to instantiate foodOne")
         }
         
-        foodItems += [foodOne]
+        
+        guard let foodTwo = FoodItem(Time: "21.30", Gram: 300, Name: "Burger", Photo: photo1, Carbs: 5, Fats: 29, Proteins: 24, Kcals: 377) else {
+            fatalError("Unable to instantiate foodOne")
+        }
+        
+        guard let foodThree = FoodItem(Time: "22.30", Gram: 50, Name: "Caesar Salad", Photo: photo1, Carbs: 30, Fats: 5, Proteins: 10, Kcals: 205) else {
+            fatalError("Unable to instantiate foodOne")
+        }
+        
+        guard let foodFour = FoodItem(Time: "23.30", Gram: 500, Name: "Pepper Steak", Photo: photo1, Carbs: 5, Fats: 29, Proteins: 24, Kcals: 377) else {
+            fatalError("Unable to instantiate foodOne")
+        }
+        
+        guard let foodFive = FoodItem(Time: "23.32", Gram: 50, Name: "Mixed Fruit Dessert", Photo: photo1, Carbs: 30, Fats: 0, Proteins: 3, Kcals: 132) else {
+            fatalError("Unable to instantiate foodOne")
+        }
+        
+        foodItems += [foodOne, foodTwo, foodThree, foodFour, foodFive]
         
     }
 

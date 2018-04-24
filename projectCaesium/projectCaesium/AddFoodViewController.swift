@@ -17,7 +17,11 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
     
     
     
-    @IBOutlet weak var cancelButton: UIBarButtonItem!
+    //Simply revert to previous scene by dismissing current scene should the user press Cancel and any inputted data is not stored.
+    @IBAction func cancelButton(_ sender: UIBarButtonItem)
+    {
+        dismiss(animated: true, completion: nil)
+    }
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var mealNameBox: UITextField!
     @IBOutlet weak var caloriesBox: UITextField!
@@ -111,7 +115,13 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
     private func disableSaveOptNoText() {
         // Disable the Save button if the text field is empty.
         let mealName = mealNameBox.text ?? ""
-        saveButton.isEnabled = !mealName.isEmpty
+        let portion = portionBox.text ?? ""
+        let carb = carbBox.text ?? ""
+        let fat = fatBox.text ?? ""
+        let protein = proteinBox.text ?? ""
+        let kcals = caloriesBox.text ?? ""
+        
+        saveButton.isEnabled = !mealName.isEmpty && !portion.isEmpty && !carb.isEmpty && !fat.isEmpty && !protein.isEmpty && !kcals.isEmpty
     }
 
     

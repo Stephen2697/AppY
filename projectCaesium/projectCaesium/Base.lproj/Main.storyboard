@@ -291,7 +291,11 @@
                         <viewLayoutGuide key="safeArea" id="252-EK-ruM"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Food Item" id="ZiT-Ln-TYA">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="v6G-kO-u8k"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="v6G-kO-u8k">
+                            <connections>
+                                <action selector="cancelButton:" destination="9ZT-Bh-lkQ" id="EJ9-F1-cA3"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="GFF-K2-fJz">
                             <connections>
                                 <segue destination="5me-of-tzn" kind="unwind" unwindAction="unwindToFoodItemListWithSender:" id="0ga-Me-mPT"/>
@@ -300,7 +304,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="caloriesBox" destination="wue-GE-NXO" id="osk-Dk-cfk"/>
-                        <outlet property="cancelButton" destination="v6G-kO-u8k" id="D8N-Ls-ZkV"/>
                         <outlet property="carbBox" destination="dUz-hJ-MCF" id="KdR-RO-s5e"/>
                         <outlet property="fatBox" destination="GcP-uG-sGy" id="7rn-iP-aep"/>
                         <outlet property="mealNameBox" destination="3pF-xU-HDO" id="cyJ-HF-nbx"/>

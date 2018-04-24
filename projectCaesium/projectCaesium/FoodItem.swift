@@ -29,10 +29,10 @@ class FoodItem
     {
         
         // Initialisation will return nil value should any of the following conditions be true
-        if ( (Name.isEmpty) || (Carbs<0) || (Fats<0) || (Proteins<0) || (Kcals<0) )
-        {
-            return nil
-        } //end
+//        if ( (Name.isEmpty) || (Carbs<0) || (Fats<0) || (Proteins<0) || (Kcals<0) )
+//        {
+//            return nil
+//        } //end
         
         // Initialize stored properties.
         self.LogTime = Time //get time
@@ -45,7 +45,7 @@ class FoodItem
         self.foodCalories = Kcals
         self.actCalories = (Float(Kcals)*Float((Gram/100)))
         self.expCalories = ((Carbs*4)+(Fats*9)+(Proteins*4))
-        //print("Expected Calories is \(self.expCalories)")
+        print("Expected Calories is \(self.expCalories)")
         
 
     }//end initialisation

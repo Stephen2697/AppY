@@ -91,6 +91,7 @@
         <!--Item-->
         <scene sceneID="CCb-2J-j0a">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GHs-Zx-IaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="9ZT-Bh-lkQ" customClass="ViewController" customModule="_23" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ENe-a8-S3c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -181,10 +182,10 @@
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FlE-eW-6fD">
-                                                        <rect key="frame" x="0.0" y="125.33333333333331" width="303.33333333333331" height="30"/>
+                                                        <rect key="frame" x="0.0" y="125.33333333333331" width="214.66666666666666" height="30"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbohydrates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsZ-zx-Bzz">
-                                                                <rect key="frame" x="0.0" y="0.0" width="113.33333333333333" height="30"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="153" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="153" id="xIt-Ns-Udh"/>
                                                                 </constraints>
@@ -193,7 +194,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="grams" textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dUz-hJ-MCF">
-                                                                <rect key="frame" x="113.33333333333334" y="0.0" width="190.00000000000003" height="30"/>
+                                                                <rect key="frame" x="153" y="0.0" width="61.666666666666657" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="190" id="2Oh-zt-fWw"/>
                                                                 </constraints>
@@ -204,10 +205,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85A-Oy-Nqd">
-                                                        <rect key="frame" x="0.0" y="170.33333333333331" width="253" height="30"/>
+                                                        <rect key="frame" x="0.0" y="170.33333333333331" width="214.66666666666666" height="30"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proteins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIt-rJ-R1K">
-                                                                <rect key="frame" x="0.0" y="0.0" width="63" height="30"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="153" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="153" id="QQR-8p-MUi"/>
                                                                 </constraints>
@@ -216,7 +217,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="grams" textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mXn-sN-4h4">
-                                                                <rect key="frame" x="63" y="0.0" width="190" height="30"/>
+                                                                <rect key="frame" x="153" y="0.0" width="61.666666666666657" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="190" id="tdj-81-SgH"/>
                                                                 </constraints>
@@ -227,10 +228,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P63-7t-jTI">
-                                                        <rect key="frame" x="0.0" y="215.33333333333331" width="281.66666666666669" height="30"/>
+                                                        <rect key="frame" x="0.0" y="215.33333333333331" width="279.66666666666669" height="30"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Portion Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SjN-nx-Wvc">
-                                                                <rect key="frame" x="0.0" y="0.0" width="91.666666666666671" height="30"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="153" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="153" id="ugz-fo-QKy"/>
                                                                 </constraints>
@@ -239,7 +240,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="grams/ millilitres" textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jEw-nv-Bee">
-                                                                <rect key="frame" x="91.666666666666686" y="0.0" width="190" height="30"/>
+                                                                <rect key="frame" x="153" y="0.0" width="126.66666666666669" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="190" id="ZXe-iQ-ixI"/>
                                                                 </constraints>
@@ -306,13 +307,13 @@
                         <outlet property="output" destination="eRp-pJ-usL" id="kPK-zh-h0c"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GHs-Zx-IaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2057" y="-514"/>
         </scene>
         <!--Misc-->
         <scene sceneID="rKY-ej-BC2">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aYV-qU-67N" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="RlD-sm-pSw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rLC-UD-URh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -322,7 +323,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Misc" id="sUM-EW-UdI"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aYV-qU-67N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2058" y="185"/>
         </scene>
@@ -384,26 +384,13 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="carbLabel" destination="Sa2-66-o5b" id="IJ1-A4-xtl"/>
-                                    <outlet property="cellImage" destination="S5Z-qG-1pL" id="j40-S5-Q2u"/>
-                                    <outlet property="fatLabel" destination="Ylp-eX-gtL" id="Tm2-vX-aun"/>
-                                    <outlet property="kcalLabel" destination="4DB-gJ-h2r" id="6CY-KH-r6m"/>
-                                    <outlet property="nameLabel" destination="OKd-y6-UWU" id="S8l-nP-Foi"/>
-                                    <outlet property="proteinLabel" destination="rde-au-PAe" id="Qhy-li-Wc4"/>
+                                    <outlet property="Lname" destination="OKd-y6-UWU" id="pzX-eP-pWa"/>
                                 </connections>
-                            </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="uC3-Qc-C6L">
-                                <rect key="frame" x="0.0" y="128" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uC3-Qc-C6L" id="RN8-ew-L8G">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="UIP-WN-gd0" id="z5U-G9-7Eo"/>
-                            <outlet property="delegate" destination="UIP-WN-gd0" id="5Tu-0b-MvV"/>
+                            <outlet property="dataSource" destination="UIP-WN-gd0" id="vek-yk-nIw"/>
+                            <outlet property="delegate" destination="UIP-WN-gd0" id="anX-QM-evj"/>
                         </connections>
                     </tableView>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -415,6 +402,7 @@
         <!--Today-->
         <scene sceneID="2iE-3t-uBK">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wjz-hm-BJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="2cV-iE-xru" customClass="ViewController" customModule="_23" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BTx-dh-hwC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -502,13 +490,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Today" id="81B-lj-KBg"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wjz-hm-BJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2056.8000000000002" y="-1195.5665024630543"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ew2-QZ-8xX">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vOH-vA-kMv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="OtF-OH-PDs" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KmH-4Z-2uI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -521,7 +509,6 @@
                         <segue destination="9ZT-Bh-lkQ" kind="relationship" relationship="viewControllers" id="YAP-M9-qcT"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vOH-vA-kMv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="551" y="-193"/>
         </scene>

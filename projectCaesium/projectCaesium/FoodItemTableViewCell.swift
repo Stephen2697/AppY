@@ -10,14 +10,10 @@ import UIKit
 class FoodItemTableViewCell: UITableViewCell {
 
     //MARK: Properties
-    
-    @IBOutlet weak var cellImage: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var kcalLabel: UILabel!
-    @IBOutlet weak var carbLabel: UILabel!
-    @IBOutlet weak var proteinLabel: UILabel!
-    @IBOutlet weak var fatLabel: UILabel!
 
+    
+    
+    @IBOutlet weak var Lname: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -89,8 +89,8 @@
 				9457FAE520893FB100830784 /* File */,
 				9457FADB2084FE1000830784 /* Default-568h@2x.png */,
 				9457FAAC2080FA0A00830784 /* projectCaesium */,
-				9457FAC12080FA0B00830784 /* projectCaesiumTests */,
-				9457FACC2080FA0B00830784 /* projectCaesiumUITests */,
+				9457FAC12080FA0B00830784 /* 123Tests */,
+				9457FACC2080FA0B00830784 /* 123UITests */,
 				9457FAAB2080FA0A00830784 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,22 +121,22 @@
 			path = projectCaesium;
 			sourceTree = "<group>";
 		};
-		9457FAC12080FA0B00830784 /* projectCaesiumTests */ = {
+		9457FAC12080FA0B00830784 /* 123Tests */ = {
 			isa = PBXGroup;
 			children = (
 				9457FAC22080FA0B00830784 /* projectCaesiumTests.swift */,
 				9457FAC42080FA0B00830784 /* Info.plist */,
 			);
-			path = projectCaesiumTests;
+			path = 123Tests;
 			sourceTree = "<group>";
 		};
-		9457FACC2080FA0B00830784 /* projectCaesiumUITests */ = {
+		9457FACC2080FA0B00830784 /* 123UITests */ = {
 			isa = PBXGroup;
 			children = (
 				9457FACD2080FA0B00830784 /* projectCaesiumUITests.swift */,
 				9457FACF2080FA0B00830784 /* Info.plist */,
 			);
-			path = projectCaesiumUITests;
+			path = 123UITests;
 			sourceTree = "<group>";
 		};
 		9457FAE520893FB100830784 /* File */ = {

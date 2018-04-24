@@ -55,63 +55,20 @@ class FoodItemTableViewController: UITableViewController {
         //Get the corresponding foodItem for the data source layout.
         let foodItem = foodItems[indexPath.row]
         
+        cell.Lname.text = foodItem.foodName
+        //cell.Limage.image = foodItem.foodPhoto
 
-        cell.nameLabel.text = foodItem.foodName
-        cell.cellImage.image = foodItem.foodPhoto
-        cell.kcalLabel.text =   String(foodItem.foodCalories)
-        cell.carbLabel.text = String(foodItem.foodCarbs)
-        cell.proteinLabel.text = String(foodItem.foodProteins)
-        cell.fatLabel.text = String(foodItem.foodFats)
+//        cell.nameLabel.text = foodItem.foodName
+//        cell.cellImage.image = foodItem.foodPhoto
+//        cell.kcalLabel.text =   String(foodItem.foodCalories)
+//        cell.carbLabel.text = String(foodItem.foodCarbs)
+//        cell.proteinLabel.text = String(foodItem.foodProteins)
+//        cell.fatLabel.text = String(foodItem.foodFats)
         
         
         return cell
     }
  
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     //MARK: Private Methods
     
@@ -129,19 +86,19 @@ class FoodItemTableViewController: UITableViewController {
         }
         
         
-        guard let foodTwo = FoodItem(Time: "21.30", Gram: 300, Name: "Burger", Photo: photo1, Carbs: 5, Fats: 29, Proteins: 24, Kcals: 377) else {
+        guard let foodTwo = FoodItem(Time: "21.30", Gram: 300, Name: "Burger", Photo: photo2, Carbs: 5, Fats: 29, Proteins: 24, Kcals: 377) else {
             fatalError("Unable to instantiate foodOne")
         }
         
-        guard let foodThree = FoodItem(Time: "22.30", Gram: 50, Name: "Caesar Salad", Photo: photo1, Carbs: 30, Fats: 5, Proteins: 10, Kcals: 205) else {
+        guard let foodThree = FoodItem(Time: "22.30", Gram: 50, Name: "Caesar Salad", Photo: photo3, Carbs: 30, Fats: 5, Proteins: 10, Kcals: 205) else {
             fatalError("Unable to instantiate foodOne")
         }
         
-        guard let foodFour = FoodItem(Time: "23.30", Gram: 500, Name: "Pepper Steak", Photo: photo1, Carbs: 5, Fats: 29, Proteins: 24, Kcals: 377) else {
+        guard let foodFour = FoodItem(Time: "23.30", Gram: 500, Name: "Pepper Steak", Photo: photo4, Carbs: 5, Fats: 29, Proteins: 24, Kcals: 377) else {
             fatalError("Unable to instantiate foodOne")
         }
         
-        guard let foodFive = FoodItem(Time: "23.32", Gram: 50, Name: "Mixed Fruit Dessert", Photo: photo1, Carbs: 30, Fats: 0, Proteins: 3, Kcals: 132) else {
+        guard let foodFive = FoodItem(Time: "23.32", Gram: 50, Name: "Mixed Fruit Dessert", Photo: photo5, Carbs: 30, Fats: 0, Proteins: 3, Kcals: 132) else {
             fatalError("Unable to instantiate foodOne")
         }
         

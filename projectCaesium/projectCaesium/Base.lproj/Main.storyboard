@@ -93,11 +93,11 @@
             <objects>
                 <viewController title="Add Food Item" id="9ZT-Bh-lkQ" userLabel="Add Food" customClass="AddFoodViewController" customModule="_23" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ENe-a8-S3c">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view verifyAmbiguity="off" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j2w-WO-18r">
-                                <rect key="frame" x="0.0" y="16" width="391" height="674"/>
+                                <rect key="frame" x="0.0" y="104" width="391" height="674"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="5mG-ap-59i">
                                         <rect key="frame" x="24" y="8" width="343" height="401.33333333333331"/>
@@ -255,9 +255,6 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="tintColor" red="0.87716564119999996" green="0.19408051549999999" blue="0.2194249251" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="  Add Meal To Your Meals  "/>
-                                                        <connections>
-                                                            <action selector="addFoodItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z3a-Fd-ROi"/>
-                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsB-tW-xyP">
                                                         <rect key="frame" x="0.0" y="43" width="343" height="33"/>
@@ -293,11 +290,24 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="252-EK-ruM"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Add Food" id="6Lg-mr-nhB"/>
+                    <navigationItem key="navigationItem" title="Add Food Item" id="ZiT-Ln-TYA">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="v6G-kO-u8k"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="GFF-K2-fJz"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="caloriesBox" destination="wue-GE-NXO" id="osk-Dk-cfk"/>
+                        <outlet property="cancelButton" destination="v6G-kO-u8k" id="D8N-Ls-ZkV"/>
+                        <outlet property="carbBox" destination="dUz-hJ-MCF" id="KdR-RO-s5e"/>
+                        <outlet property="fatBox" destination="GcP-uG-sGy" id="7rn-iP-aep"/>
+                        <outlet property="mealNameBox" destination="3pF-xU-HDO" id="cyJ-HF-nbx"/>
+                        <outlet property="portionBox" destination="jEw-nv-Bee" id="xMr-yz-yQx"/>
+                        <outlet property="proteinBox" destination="mXn-sN-4h4" id="tRu-ch-25V"/>
+                        <outlet property="saveButton" destination="GFF-K2-fJz" id="CKn-uL-6tx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GHs-Zx-IaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3937" y="-1930"/>
+            <point key="canvasLocation" x="4879.1999999999998" y="-1930.0492610837439"/>
         </scene>
         <!--Misc-->
         <scene sceneID="rKY-ej-BC2">
@@ -389,10 +399,10 @@
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="My Foods" id="E3E-s5-udQ">
-                        <barButtonItem key="leftBarButtonItem" title="Back" style="plain" id="wnS-Kv-bEF"/>
+                        <barButtonItem key="leftBarButtonItem" title="Dashboard" style="plain" id="wnS-Kv-bEF"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="J7j-h7-mAK">
                             <connections>
-                                <segue destination="9ZT-Bh-lkQ" kind="show" id="Xhx-TX-0B4"/>
+                                <segue destination="plh-AB-AVP" kind="presentation" id="Xhx-TX-0B4"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -533,6 +543,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bMU-4x-ky4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2056.8000000000002" y="-1930.0492610837439"/>
+        </scene>
+        <!--Add Food-->
+        <scene sceneID="Tda-dI-sEI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="plh-AB-AVP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Add Food" id="6Lg-mr-nhB"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="G5D-pv-rB4">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9ZT-Bh-lkQ" kind="relationship" relationship="rootViewController" id="R23-TA-Qss"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vL1-R8-OwZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3936.8000000000002" y="-1930.0492610837439"/>
         </scene>
     </scenes>
 </document>

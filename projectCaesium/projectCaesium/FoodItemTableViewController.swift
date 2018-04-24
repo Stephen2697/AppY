@@ -55,15 +55,14 @@ class FoodItemTableViewController: UITableViewController {
         //Get the corresponding foodItem for the data source layout.
         let foodItem = foodItems[indexPath.row]
         
-        cell.Lname.text = foodItem.foodName
-        //cell.Limage.image = foodItem.foodPhoto
 
-//        cell.nameLabel.text = foodItem.foodName
-//        cell.cellImage.image = foodItem.foodPhoto
-//        cell.kcalLabel.text =   String(foodItem.foodCalories)
-//        cell.carbLabel.text = String(foodItem.foodCarbs)
-//        cell.proteinLabel.text = String(foodItem.foodProteins)
-//        cell.fatLabel.text = String(foodItem.foodFats)
+
+        cell.nameLabel.text = foodItem.foodName
+        cell.cellImage.image = foodItem.foodPhoto
+        cell.kcalLabel.text =   String(foodItem.foodCalories)
+        cell.carbLabel.text = "C: \(String(foodItem.foodCarbs))"
+        cell.proteinLabel.text = String(foodItem.foodProteins)
+        cell.fatLabel.text = String(foodItem.foodFats)
         
         
         return cell

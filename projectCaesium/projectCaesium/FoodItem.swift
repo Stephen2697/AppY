@@ -23,16 +23,26 @@ class FoodItem
     var actCalories: Float
     var expCalories: Int
     
-    //MARK: Initialisation
+    //MARK: Encode/Decode Struct Properties
+    //static as these constants belong to the structure itself and not its instances (e.g. PropertyKey.LogTime)
+    struct PropertyKey
+    {
+        static let LogTime = "LogTime"
+        static let gramSize = "gramSize"
+        static let foodName = "foodName"
+        static let foodPhoto = "foodPhoto"
+        static let foodCarbs = "foodCarbs"
+        static let foodFats = "foodFats"
+        static let foodProteins = "foodProteins"
+        static let foodCalories = "foodCalories"
+        static let actCalories = "actCalories"
+        static let expCalories = "expCalories"
+    } //end struct
     
+    //MARK: Initialisation
     init?(Time:String, Gram: Int, Name: String, Photo: UIImage?, Carbs: Int, Fats: Int, Proteins: Int, Kcals: Int)
     {
         
-        // Initialisation will return nil value should any of the following conditions be true
-//        if ( (Name.isEmpty) || (Carbs<0) || (Fats<0) || (Proteins<0) || (Kcals<0) )
-//        {
-//            return nil
-//        } //end
         
         // Initialize stored properties.
         self.LogTime = Time //get time
@@ -45,6 +55,7 @@ class FoodItem
         self.foodCalories = Kcals
         self.actCalories = (Float(Kcals)*Float((Gram/100)))
         self.expCalories = ((Carbs*4)+(Fats*9)+(Proteins*4))
+        print("Total Cals: \(self.actCalories)")
         print("Expected Calories is \(self.expCalories)")
         
 

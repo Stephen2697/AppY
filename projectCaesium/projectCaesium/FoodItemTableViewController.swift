@@ -59,10 +59,10 @@ class FoodItemTableViewController: UITableViewController {
 
         cell.nameLabel.text = foodItem.foodName
         cell.cellImage.image = foodItem.foodPhoto
-        cell.kcalLabel.text =   String(foodItem.foodCalories)
+        cell.kcalLabel.text =   "Kcals: \(String(foodItem.foodCalories))"
         cell.carbLabel.text = "C: \(String(foodItem.foodCarbs))"
-        cell.proteinLabel.text = String(foodItem.foodProteins)
-        cell.fatLabel.text = String(foodItem.foodFats)
+        cell.proteinLabel.text = "P: \(String(foodItem.foodProteins))"
+        cell.fatLabel.text = "F: \(String(foodItem.foodFats))"
         
         
         return cell

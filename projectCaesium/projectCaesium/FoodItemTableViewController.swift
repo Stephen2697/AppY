@@ -68,6 +68,22 @@ class FoodItemTableViewController: UITableViewController {
         return cell
     }
  
+    //MARK: Actions
+    //dealing with unwinding from Add Food View to Food Table View
+    
+    
+    
+    @IBAction func unwindToFoodItemList(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.source as? AddFoodViewController, let food = sourceViewController.newFoodItem
+        {
+            
+            // Add a new meal.
+            let newIndexPath = IndexPath(row: foodItems.count, section: 0)
+            
+            foodItems.append(food)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        }
+    }
     
     //MARK: Private Methods
     
@@ -124,6 +140,9 @@ class FoodItemTableViewController: UITableViewController {
         
         foodItems += [foodOne, foodTwo, foodThree, foodFour, foodFive, foodSix, food7, food8, food9, food10]
         
-    }
+    } //end loadsample()
+    
+    
+    
 
 }

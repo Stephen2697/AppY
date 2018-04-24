@@ -101,7 +101,28 @@ class FoodItemTableViewController: UITableViewController {
             fatalError("Unable to instantiate foodOne")
         }
         
-        foodItems += [foodOne, foodTwo, foodThree, foodFour, foodFive]
+        guard let foodSix = FoodItem(Time: "20.30", Gram: 100, Name: "Crisps & Dip", Photo: photo1, Carbs: 30, Fats: 15, Proteins: 5, Kcals: 200) else {
+            fatalError("Unable to instantiate foodOne")
+        }
+        
+        
+        guard let food7 = FoodItem(Time: "21.30", Gram: 300, Name: "Burger", Photo: photo2, Carbs: 5, Fats: 29, Proteins: 24, Kcals: 377) else {
+            fatalError("Unable to instantiate foodOne")
+        }
+        
+        guard let food8 = FoodItem(Time: "22.30", Gram: 50, Name: "Caesar Salad", Photo: photo3, Carbs: 30, Fats: 5, Proteins: 10, Kcals: 205) else {
+            fatalError("Unable to instantiate foodOne")
+        }
+        
+        guard let food9 = FoodItem(Time: "23.30", Gram: 500, Name: "Pepper Steak", Photo: photo4, Carbs: 5, Fats: 29, Proteins: 24, Kcals: 377) else {
+            fatalError("Unable to instantiate foodOne")
+        }
+        
+        guard let food10 = FoodItem(Time: "23.32", Gram: 50, Name: "Mixed Fruit Dessert", Photo: photo5, Carbs: 30, Fats: 0, Proteins: 3, Kcals: 132) else {
+            fatalError("Unable to instantiate foodOne")
+        }
+        
+        foodItems += [foodOne, foodTwo, foodThree, foodFour, foodFive, foodSix, food7, food8, food9, food10]
         
     }
 

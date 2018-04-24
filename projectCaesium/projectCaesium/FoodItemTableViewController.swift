@@ -19,10 +19,16 @@ class FoodItemTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//>>>...
+        if let savedMeals = loadEntries() {
+            foodItems += savedMeals
+        }
         
-        //load our sample data
-        loadSampleFoods()
+        else {
+            // Load our sample data
+            loadSampleFoods()
+        }
+//>>>...
+
         
         
     }
@@ -76,29 +82,31 @@ class FoodItemTableViewController: UITableViewController {
  
     //MARK: Actions
     //dealing with unwinding from Add Food View to Food Table View
-    
-    
-    
     @IBAction func unwindToFoodItemList(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.source as? AddFoodViewController, let food = sourceViewController.newFoodItem
         {
             
-            // Add a new meal.
+            // Add a new foodItem.
             let newIndexPath = IndexPath(row: foodItems.count, section: 0)
             
+            //add this food item to the food list
             foodItems.append(food)
+            
             tableView.insertRows(at: [newIndexPath], with: .automatic)
             
+            //save the foodItems array
             saveEntry()
         }
     }
     
     //MARK: Private Methods
     
+    //method to save each entry
     private func saveEntry()
     {
-        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(foodItems, toFile: FoodItem.ArchiveURL.path)
-        if isSuccessfulSave
+        //save the foodItems array to memory... if return is true we have success
+        let saved = NSKeyedArchiver.archiveRootObject(foodItems, toFile: FoodItem.ArchiveURL.path)
+        if saved
         {
             os_log("Entry saved.", log: OSLog.default, type: .debug)
         } else {
@@ -106,9 +114,17 @@ class FoodItemTableViewController: UITableViewController {
         }
     }
     
-    private func loadSampleFoods() {
+    //Method returns either nil or an array of FoodItem objects
+    private func loadEntries() -> [FoodItem]?
+    {
+        //return object from memory location and downcast to an array of FoodItem objects
+        return NSKeyedUnarchiver.unarchiveObject(withFile: FoodItem.ArchiveURL.path) as? [FoodItem]
+    }
+    
+    private func loadSampleFoods()
+    {
         
-        //load in 3 food images
+        //load in food images
         let photo1 = UIImage(named: "Sample1")
         let photo2 = UIImage(named: "Sample2")
         let photo3 = UIImage(named: "Sample3")
@@ -121,54 +137,51 @@ class FoodItemTableViewController: UITableViewController {
         
         
         guard let foodTwo = FoodItem(Time: "21.30", Gram: 300, Name: "Burger", Photo: photo2, Carbs: 5, Fats: 29, Proteins: 24, Kcals: 377) else {
-            fatalError("Unable to instantiate foodOne")
+            fatalError("Unable to instantiate foodTwo")
         }
         
         guard let foodThree = FoodItem(Time: "22.30", Gram: 50, Name: "Caesar Salad", Photo: photo3, Carbs: 30, Fats: 5, Proteins: 10, Kcals: 205) else {
-            fatalError("Unable to instantiate foodOne")
+            fatalError("Unable to instantiate foodThree")
         }
         
         guard let foodFour = FoodItem(Time: "23.30", Gram: 500, Name: "Pepper Steak", Photo: photo4, Carbs: 5, Fats: 29, Proteins: 24, Kcals: 377) else {
-            fatalError("Unable to instantiate foodOne")
+            fatalError("Unable to instantiate foodFour")
         }
         
         guard let foodFive = FoodItem(Time: "23.32", Gram: 50, Name: "Mixed Fruit Dessert", Photo: photo5, Carbs: 30, Fats: 0, Proteins: 3, Kcals: 132) else {
-            fatalError("Unable to instantiate foodOne")
+            fatalError("Unable to instantiate foodFive")
         }
         
         guard let foodSix = FoodItem(Time: "20.30", Gram: 100, Name: "Crisps & Dip", Photo: photo1, Carbs: 30, Fats: 15, Proteins: 5, Kcals: 200) else {
-            fatalError("Unable to instantiate foodOne")
+            fatalError("Unable to instantiate foodSix")
         }
         
         
         guard let food7 = FoodItem(Time: "21.30", Gram: 300, Name: "Burger", Photo: photo2, Carbs: 5, Fats: 29, Proteins: 24, Kcals: 377) else {
-            fatalError("Unable to instantiate foodOne")
+            fatalError("Unable to instantiate food7")
         }
         
         guard let food8 = FoodItem(Time: "22.30", Gram: 150, Name: "Caesar Salad", Photo: photo3, Carbs: 30, Fats: 5, Proteins: 10, Kcals: 205) else {
-            fatalError("Unable to instantiate foodOne")
+            fatalError("Unable to instantiate food8")
         }
         
         guard let food9 = FoodItem(Time: "23.30", Gram: 500, Name: "Pepper Steak", Photo: photo4, Carbs: 5, Fats: 29, Proteins: 24, Kcals: 377) else {
-            fatalError("Unable to instantiate foodOne")
+            fatalError("Unable to instantiate food9")
         }
         
         guard let food10 = FoodItem(Time: "23.32", Gram: 50, Name: "Mixed Fruit Dessert", Photo: photo5, Carbs: 30, Fats: 0, Proteins: 3, Kcals: 132) else {
-            fatalError("Unable to instantiate foodOne")
+            fatalError("Unable to instantiate food10")
         }
         
         guard let food11 = FoodItem(Time: "23.32", Gram: 99, Name: "Mixed Fruit Dessert", Photo: photo5, Carbs: 30, Fats: 0, Proteins: 3, Kcals: 132) else {
-            fatalError("Unable to instantiate foodOne")
+            fatalError("Unable to instantiate food11")
         }
         
         foodItems += [foodOne, foodTwo, foodThree, foodFour, foodFive, foodSix, food7, food8, food9, food10, food11]
         
     } //end loadsample()
     
-    private func loadMeals() -> [FoodItem]?
-    {
-        return NSKeyedUnarchiver.unarchiveObject(withFile: FoodItem.ArchiveURL.path) as? [FoodItem]
-    }
+    
     
 
 }

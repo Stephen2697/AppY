@@ -25,6 +25,14 @@ class FoodItem: NSObject, NSCoding
     var actCalories: Float
     var expCalories: Float
     
+    //MARK: Archive Path
+    //static as these constants belong to the class not instances of the class
+//    The DocumentsDirectory constant looks up the URL for your app’s documents directory where the saved data is located. It returns an array of URLs - the first parameter returns the first URL in the array.
+    static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
+    
+    //Now we append foodItems to this URL to create an access point to this apps data
+    static let ArchiveURL = DocumentsDirectory.appendingPathComponent("foodItems")
+    
     //MARK: Encode/Decode Struct Properties
     //static as these constants belong to the structure itself and not its instances (e.g. PropertyKey.LogTime)
     struct PropertyKey

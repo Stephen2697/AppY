@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import os.log
 
 class FoodItemTableViewController: UITableViewController {
 
@@ -18,8 +19,12 @@ class FoodItemTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+//>>>...
+        
         //load our sample data
         loadSampleFoods()
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,9 +66,9 @@ class FoodItemTableViewController: UITableViewController {
         cell.nameLabel.text = foodItem.foodName
         cell.cellImage.image = foodItem.foodPhoto
         cell.kcalLabel.text =   "Kcals: \(String(format: "%.0f", foodItem.actCalories))"
-        cell.carbLabel.text = "C: \(String(foodItem.foodCarbs))"
-        cell.proteinLabel.text = "P: \(String(foodItem.foodProteins))"
-        cell.fatLabel.text = "F: \(String(foodItem.foodFats))"
+        cell.carbLabel.text = "Car: \(String(foodItem.foodCarbs))%"
+        cell.proteinLabel.text = "Pro: \(String(foodItem.foodProteins))%"
+        cell.fatLabel.text = "Fat: \(String(foodItem.foodFats))%"
         
         
         return cell
@@ -83,10 +88,23 @@ class FoodItemTableViewController: UITableViewController {
             
             foodItems.append(food)
             tableView.insertRows(at: [newIndexPath], with: .automatic)
+            
+            saveEntry()
         }
     }
     
     //MARK: Private Methods
+    
+    private func saveEntry()
+    {
+        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(foodItems, toFile: FoodItem.ArchiveURL.path)
+        if isSuccessfulSave
+        {
+            os_log("Entry saved.", log: OSLog.default, type: .debug)
+        } else {
+            os_log("Failed to Save Entry...", log: OSLog.default, type: .error)
+        }
+    }
     
     private func loadSampleFoods() {
         
@@ -147,7 +165,10 @@ class FoodItemTableViewController: UITableViewController {
         
     } //end loadsample()
     
-    
+    private func loadMeals() -> [FoodItem]?
+    {
+        return NSKeyedUnarchiver.unarchiveObject(withFile: FoodItem.ArchiveURL.path) as? [FoodItem]
+    }
     
 
 }

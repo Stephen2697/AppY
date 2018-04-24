@@ -407,7 +407,6 @@
                     </tableView>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="My Foods" id="E3E-s5-udQ">
-                        <barButtonItem key="leftBarButtonItem" title="Dashboard" style="plain" id="wnS-Kv-bEF"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="J7j-h7-mAK">
                             <connections>
                                 <segue destination="plh-AB-AVP" kind="presentation" id="Xhx-TX-0B4"/>

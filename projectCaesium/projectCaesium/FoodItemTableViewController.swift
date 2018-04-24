@@ -57,9 +57,10 @@ class FoodItemTableViewController: UITableViewController {
         
 
 
+        
         cell.nameLabel.text = foodItem.foodName
         cell.cellImage.image = foodItem.foodPhoto
-        cell.kcalLabel.text =   "Kcals: \(String(foodItem.foodCalories))"
+        cell.kcalLabel.text =   "Kcals: \(String(format: "%.0f", foodItem.actCalories))"
         cell.carbLabel.text = "C: \(String(foodItem.foodCarbs))"
         cell.proteinLabel.text = "P: \(String(foodItem.foodProteins))"
         cell.fatLabel.text = "F: \(String(foodItem.foodFats))"
@@ -126,7 +127,7 @@ class FoodItemTableViewController: UITableViewController {
             fatalError("Unable to instantiate foodOne")
         }
         
-        guard let food8 = FoodItem(Time: "22.30", Gram: 50, Name: "Caesar Salad", Photo: photo3, Carbs: 30, Fats: 5, Proteins: 10, Kcals: 205) else {
+        guard let food8 = FoodItem(Time: "22.30", Gram: 150, Name: "Caesar Salad", Photo: photo3, Carbs: 30, Fats: 5, Proteins: 10, Kcals: 205) else {
             fatalError("Unable to instantiate foodOne")
         }
         
@@ -138,7 +139,11 @@ class FoodItemTableViewController: UITableViewController {
             fatalError("Unable to instantiate foodOne")
         }
         
-        foodItems += [foodOne, foodTwo, foodThree, foodFour, foodFive, foodSix, food7, food8, food9, food10]
+        guard let food11 = FoodItem(Time: "23.32", Gram: 99, Name: "Mixed Fruit Dessert", Photo: photo5, Carbs: 30, Fats: 0, Proteins: 3, Kcals: 132) else {
+            fatalError("Unable to instantiate foodOne")
+        }
+        
+        foodItems += [foodOne, foodTwo, foodThree, foodFour, foodFive, foodSix, food7, food8, food9, food10, food11]
         
     } //end loadsample()
     

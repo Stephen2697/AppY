@@ -83,6 +83,19 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
         self.carbBox.delegate = self
         self.fatBox.delegate = self
         
+        //If we are editing, then fill the textboxes with the existing object properties
+        if let foodItem = newFoodItem {
+            navigationItem.title = foodItem.foodName
+            mealNameBox.text   = foodItem.foodName
+            addPhotoImage.image = foodItem.foodPhoto
+            caloriesBox.text = String(foodItem.foodCalories)
+            portionBox.text = String(foodItem.gramSize)
+            proteinBox.text = String(foodItem.foodProteins)
+            carbBox.text = String(foodItem.foodCarbs)
+            fatBox.text = String(foodItem.foodFats)
+        }
+        
+        
         //Disable Saves until valid entry
         disableSaveOptNoText()
     }

@@ -9,7 +9,7 @@
 import UIKit
 import os.log
 
-class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate  {
+class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate,UIImagePickerControllerDelegate  {
 
     //MARK: Properties
     //Create our intermediary object variable to allow us to take user input and later save or discard it
@@ -22,6 +22,8 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
     {
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBOutlet weak var addPhotoImage: UIImageView!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var mealNameBox: UITextField!
     @IBOutlet weak var caloriesBox: UITextField!
@@ -29,6 +31,46 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
     @IBOutlet weak var proteinBox: UITextField!
     @IBOutlet weak var carbBox: UITextField!
     @IBOutlet weak var fatBox: UITextField!
+    
+    //Gesture Recognising - User Selects to Add Image
+    
+    @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer)
+    {
+        
+        // UIImagePickerController is a view controller that lets a user pick media from their photo library.
+        let imagePickerController = UIImagePickerController()
+    
+        imagePickerController.sourceType = .photoLibrary
+        
+        //alert View Controller when user picks image
+        imagePickerController.delegate = self
+        present(imagePickerController, animated: true, completion: nil)
+    }
+    
+    //MARK: imagePickerControllers
+    //Dismiss the Image Picker View on Cancel
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
+    {
+        // Dismiss the picker if the user canceled.
+        dismiss(animated: true, completion: nil)
+    }
+    
+    //Deal with users selected image
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        // The info dictionary may contain multiple representations of the image. You want to use the original.
+        guard let selectedImage = info[UIImagePickerControllerOriginalImage] as? UIImage
+        else
+        {
+            fatalError("Error Recieving Image")
+        }
+        
+        //Display the selected image in the add food item view
+        addPhotoImage.image = selectedImage
+        
+        // Dismiss the image selection view
+        dismiss(animated: true, completion: nil)
+    }
     
     override func viewDidLoad()
     {

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/stephen2697/Desktop/AppY/projectCaesium/projectCaesium.xcodeproj">
+      location = "group:../../../psd">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

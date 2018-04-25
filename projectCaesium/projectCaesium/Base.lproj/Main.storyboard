@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -100,7 +101,7 @@
                                 <rect key="frame" x="0.0" y="104" width="391" height="674"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="5mG-ap-59i">
-                                        <rect key="frame" x="24" y="8" width="343" height="358.33333333333331"/>
+                                        <rect key="frame" x="24" y="8" width="343" height="667.33333333333337"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="RNV-Ey-VN9">
                                                 <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
@@ -247,21 +248,21 @@
                                                     <constraint firstAttribute="trailing" secondItem="tty-rb-caJ" secondAttribute="trailing" id="bTR-PI-7bj"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8XW-yB-maq">
-                                                <rect key="frame" x="0.0" y="325.33333333333331" width="343" height="33"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gH3-t6-jrR">
-                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="33"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="tintColor" red="0.87716564119999996" green="0.19408051549999999" blue="0.2194249251" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <state key="normal" title="  Add Meal To Your Meals  "/>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="340" placeholderIntrinsicHeight="340" image="AD1" translatesAutoresizingMaskIntoConstraints="NO" id="6Sc-kr-m60">
+                                                <rect key="frame" x="0.0" y="325.33333333333331" width="343" height="341.99999999999994"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="6Sc-kr-m60" secondAttribute="height" multiplier="340:339" id="53g-pv-gjK"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="G3Y-lk-ycT" appends="YES" id="5sh-QH-VfV"/>
+                                                </connections>
+                                            </imageView>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="6Sc-kr-m60" firstAttribute="leading" secondItem="5mG-ap-59i" secondAttribute="leading" id="Dda-BW-pRa"/>
+                                            <constraint firstAttribute="trailing" secondItem="6Sc-kr-m60" secondAttribute="trailing" id="FlK-2u-xfT"/>
                                             <constraint firstItem="SKa-dX-GPg" firstAttribute="width" secondItem="5mG-ap-59i" secondAttribute="width" id="SGc-7H-HRv"/>
-                                            <constraint firstItem="8XW-yB-maq" firstAttribute="width" secondItem="5mG-ap-59i" secondAttribute="width" id="UJI-P5-yaR"/>
                                             <constraint firstAttribute="trailing" secondItem="RNV-Ey-VN9" secondAttribute="trailing" id="cZb-Il-TFf"/>
                                             <constraint firstItem="RNV-Ey-VN9" firstAttribute="leading" secondItem="5mG-ap-59i" secondAttribute="leading" id="xpv-0D-9hb"/>
                                         </constraints>
@@ -297,6 +298,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addPhotoImage" destination="6Sc-kr-m60" id="Ffz-ah-G7a"/>
                         <outlet property="caloriesBox" destination="wue-GE-NXO" id="osk-Dk-cfk"/>
                         <outlet property="carbBox" destination="dUz-hJ-MCF" id="KdR-RO-s5e"/>
                         <outlet property="fatBox" destination="GcP-uG-sGy" id="7rn-iP-aep"/>
@@ -308,6 +310,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GHs-Zx-IaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="5me-of-tzn" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="G3Y-lk-ycT">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="9ZT-Bh-lkQ" id="Sxq-LX-Dcj"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4879.1999999999998" y="-1930.0492610837439"/>
         </scene>
@@ -566,4 +573,7 @@
             <point key="canvasLocation" x="3936.8000000000002" y="-1930.0492610837439"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AD1" width="677" height="677"/>
+    </resources>
 </document>

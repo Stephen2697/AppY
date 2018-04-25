@@ -56,6 +56,7 @@
 		9457FADF208937C700830784 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		946CD324208E12E60043E5A5 /* FoodItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemTableViewCell.swift; sourceTree = "<group>"; };
 		946CD326208E18C00043E5A5 /* FoodItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemTableViewController.swift; sourceTree = "<group>"; };
+		94EF7D26208FF6B800646A38 /* psd */ = {isa = PBXFileReference; lastKnownFileType = folder; name = psd; path = ../../../psd; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +109,7 @@
 		9457FAAC2080FA0A00830784 /* projectCaesium */ = {
 			isa = PBXGroup;
 			children = (
+				94EF7D26208FF6B800646A38 /* psd */,
 				9457FAAD2080FA0A00830784 /* AppDelegate.swift */,
 				9457FAAF2080FA0A00830784 /* AddFoodViewController.swift */,
 				9457FAB12080FA0A00830784 /* Main.storyboard */,

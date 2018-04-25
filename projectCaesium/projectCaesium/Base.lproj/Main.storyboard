@@ -398,7 +398,7 @@
                                     <outlet property="kcalLabel" destination="4DB-gJ-h2r" id="o28-ib-d0l"/>
                                     <outlet property="nameLabel" destination="OKd-y6-UWU" id="4os-36-FZ0"/>
                                     <outlet property="proteinLabel" destination="rde-au-PAe" id="wty-H2-tQk"/>
-                                    <segue destination="9ZT-Bh-lkQ" kind="show" id="dt7-5k-p2J"/>
+                                    <segue destination="9ZT-Bh-lkQ" kind="show" identifier="ShowDetail" id="dt7-5k-p2J"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -411,7 +411,7 @@
                         <barButtonItem key="backBarButtonItem" title="hi" id="e4M-7l-Alv"/>
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="J7j-h7-mAK">
                             <connections>
-                                <segue destination="plh-AB-AVP" kind="presentation" id="Xhx-TX-0B4"/>
+                                <segue destination="plh-AB-AVP" kind="presentation" identifier="AddItem" id="Xhx-TX-0B4"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

@@ -28,6 +28,53 @@ class FoodItemTableViewController: UITableViewController {
             loadSampleFoods()
         }
     }
+    
+    //MARK: Navigation
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        
+        super.prepare(for: segue, sender: sender)
+        
+        //Creating a switch statement which deals with the two kinds of segues which will be encountered when using the same scene for two separate purposes... In the first case we wish to add new food items, in the second we want to edit food items. To handle these similar activities we will have to make slight adjustments to the scene based on the activity we wish to carry out
+        switch(segue.identifier ?? "")
+        {
+        
+        //in the case the segue identifier states we want to add items...
+        case "AddItem":
+            os_log("Adding a new meal.", log: OSLog.default, type: .debug)
+           
+        //Show item details
+        case "ShowDetail":
+            //constant takes the users aimed destination
+            guard let FoodAddOrEditViewController = segue.destination as? AddFoodViewController
+            else
+            {
+                fatalError("Unexpected destination: \(segue.destination)")
+            }
+            
+            //save the sending table cell so we can display the corresponding food item details
+            guard let selectedItemCell = sender as? FoodItemTableViewCell
+            else
+            {
+                fatalError("Unexpected sender: \(String(describing: sender))")
+            }
+            
+            //save the index path of the given cell
+            guard let indexPath = tableView.indexPath(for: selectedItemCell)
+            else {
+                fatalError("The selected cell is not being displayed by the table")
+            }
+            
+            //take in object selected
+            let selectedItem = foodItems[indexPath.row]
+            FoodAddOrEditViewController.newFoodItem = selectedItem
+            
+        //default case - will never get here...hopefully!
+        default:
+            fatalError("Invalid Segue Identifier Calling: \(String(describing: segue.identifier))")
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

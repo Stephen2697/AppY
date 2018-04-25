@@ -140,7 +140,7 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
         
         let Gram: Int? = Int(portionBox.text!)
         let Name = mealNameBox.text ?? ""
-        let Photo = UIImage(named: "Sample3")
+        let Photo = addPhotoImage.image
         let Carbs: Int? = Int(carbBox.text!)
         let Fats: Int? = Int(fatBox.text!)
         let Proteins: Int? = Int(proteinBox.text!)

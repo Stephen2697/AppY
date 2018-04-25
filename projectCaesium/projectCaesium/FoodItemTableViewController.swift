@@ -27,10 +27,6 @@ class FoodItemTableViewController: UITableViewController {
             // Load our sample data
             loadSampleFoods()
         }
-//>>>...
-
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -89,8 +85,9 @@ class FoodItemTableViewController: UITableViewController {
             // Add a new foodItem.
             let newIndexPath = IndexPath(row: foodItems.count, section: 0)
             
-            //add this food item to the food list
+            //add this food item to the food array
             foodItems.append(food)
+            
             
             tableView.insertRows(at: [newIndexPath], with: .automatic)
             

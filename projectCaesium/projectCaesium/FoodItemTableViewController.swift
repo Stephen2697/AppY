@@ -125,19 +125,27 @@ class FoodItemTableViewController: UITableViewController {
  
     //MARK: Actions
     //dealing with unwinding from Add Food View to Food Table View
+    //I.E. We are moving from adding/ editing back to the table view - we need to save our food entry
     @IBAction func unwindToFoodItemList(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.source as? AddFoodViewController, let food = sourceViewController.newFoodItem
         {
+            //check if a row was selected in the index path, if so then we are dealing with an edit
+            if let selectedIndexPath = tableView.indexPathForSelectedRow
+            {
+                //In this case we update the food entry at this given path with the user's input and reload the table view
+                foodItems[selectedIndexPath.row] = food
+                tableView.reloadRows(at: [selectedIndexPath], with: .none)
+            }
             
-            // Add a new foodItem.
-            let newIndexPath = IndexPath(row: foodItems.count, section: 0)
-            
-            //add this food item to the food array
-            foodItems.append(food)
-            
-            
-            tableView.insertRows(at: [newIndexPath], with: .automatic)
-            
+            //otherwise we are dealing with a basic new food item entry
+            else
+            {
+                // Add a new foodItem.
+                let newIndexPath = IndexPath(row: foodItems.count, section: 0)
+                //add this food item to the food array
+                foodItems.append(food)
+                tableView.insertRows(at: [newIndexPath], with: .automatic)
+            }
             //save the foodItems array
             saveEntry()
         }

@@ -92,6 +92,9 @@ class FoodItemTableViewController: UITableViewController {
             //Delete selected row from the array of food objects
             foodItems.remove(at: indexPath.row)
             
+            //save object array
+            saveEntry()
+            
             //Remove this corresponding row from the table view
             tableView.deleteRows(at: [indexPath], with: .fade)
             
@@ -175,6 +178,7 @@ class FoodItemTableViewController: UITableViewController {
                 foodItems.append(food)
                 tableView.insertRows(at: [newIndexPath], with: .automatic)
             }
+            
             //save the foodItems array
             saveEntry()
         }

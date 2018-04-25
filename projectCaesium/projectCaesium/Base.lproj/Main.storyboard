@@ -321,7 +321,7 @@
             </objects>
             <point key="canvasLocation" x="4879.1999999999998" y="-1930.0492610837439"/>
         </scene>
-        <!--Misc-->
+        <!--Developer Information-->
         <scene sceneID="rKY-ej-BC2">
             <objects>
                 <viewController id="RlD-sm-pSw" sceneMemberID="viewController">
@@ -331,11 +331,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0Mp-Jg-c3H"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Misc" id="sUM-EW-UdI"/>
+                    <navigationItem key="navigationItem" title="Developer Information" id="1A3-BZ-Ewc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYV-qU-67N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2057" y="246"/>
+            <point key="canvasLocation" x="2999.1999999999998" y="245.32019704433498"/>
         </scene>
         <!--My Food Items-->
         <scene sceneID="ulP-Mb-BFu">
@@ -419,6 +419,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ux6-DA-ONy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -512,7 +513,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="van-re-wiE"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Today" id="81B-lj-KBg"/>
+                    <tabBarItem key="tabBarItem" title="Today" image="Today" id="81B-lj-KBg"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wjz-hm-BJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -529,8 +530,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="2cV-iE-xru" kind="relationship" relationship="viewControllers" id="2QA-HD-wNT"/>
-                        <segue destination="RlD-sm-pSw" kind="relationship" relationship="viewControllers" id="GWe-ij-Lke"/>
                         <segue destination="8Jq-E2-pRz" kind="relationship" relationship="viewControllers" id="YVn-uz-jPB"/>
+                        <segue destination="JMP-Yi-Wta" kind="relationship" relationship="viewControllers" id="GWe-ij-Lke"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vOH-vA-kMv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -541,7 +542,7 @@
         <scene sceneID="Bwc-LC-Kuo">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Jq-E2-pRz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="My Foods" id="476-iG-q6h"/>
+                    <tabBarItem key="tabBarItem" title="My Foods" image="food2" id="476-iG-q6h"/>
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="BQz-ZO-2YJ">
@@ -576,9 +577,31 @@
             </objects>
             <point key="canvasLocation" x="3932" y="-1489"/>
         </scene>
+        <!--Dev-->
+        <scene sceneID="R6E-Ce-UdR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JMP-Yi-Wta" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Dev" image="Misc" id="sUM-EW-UdI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ROo-E5-nzW">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RlD-sm-pSw" kind="relationship" relationship="rootViewController" id="qfs-cG-5wN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qS2-y6-5yC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2056.8000000000002" y="245.32019704433498"/>
+        </scene>
     </scenes>
     <resources>
         <image name="AD1" width="677" height="677"/>
+        <image name="Misc" width="24" height="24"/>
+        <image name="Today" width="24" height="24"/>
+        <image name="food2" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dt7-5k-p2J"/>

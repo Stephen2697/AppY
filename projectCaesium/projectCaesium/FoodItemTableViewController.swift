@@ -19,6 +19,9 @@ class FoodItemTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        //Manually add an edit button with the required abilities pre-baked!
+        navigationItem.leftBarButtonItem = editButtonItem
+        
         if let savedMeals = loadEntries() {
             foodItems += savedMeals
         }
@@ -79,6 +82,32 @@ class FoodItemTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //Add support for table view editing
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
+    {
+        if editingStyle == .delete
+        {
+            //Delete selected row from the array of food objects
+            foodItems.remove(at: indexPath.row)
+            
+            //Remove this corresponding row from the table view
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+        } //end if
+        
+        else if editingStyle == .insert
+        {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }//end else
+    }//end tableView editing method()
+    
+    // Override to support conditional editing of the table view.
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool
+    {
+        // Return false if you do not want the specified item to be editable.
+        return true
     }
 
     // MARK: - Table view data source

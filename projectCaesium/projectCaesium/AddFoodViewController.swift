@@ -18,9 +18,45 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
     
     
     //Simply revert to previous scene by dismissing current scene should the user press Cancel and any inputted data is not stored.
+    /*@IBAction func cancel(_ sender: UIBarButtonItem) {
+     // Depending on style of presentation (modal or push presentation), this view controller needs to be dismissed in two different ways.
+     let isPresentingInAddMealMode = presentingViewController is UINavigationController
+     
+     if isPresentingInAddMealMode {
+     dismiss(animated: true, completion: nil)
+     }
+     else if let owningNavigationController = navigationController{
+     owningNavigationController.popViewController(animated: true)
+     }
+     else {
+     fatalError("The MealViewController is not inside a navigation controller.")
+     }
+     }*/
+    
     @IBAction func cancelButton(_ sender: UIBarButtonItem)
     {
-        dismiss(animated: true, completion: nil)
+        //Constant boolean which establishes is the directing view controller of type UINavigationController - if true we are dealing with an Add Food Item cancel request
+        let isPresentingInAddMealMode = presentingViewController is UINavigationController
+        
+        //now we simply dismiss the scene and exit back to the calling view
+        if isPresentingInAddMealMode
+        {
+            //dismiss scene
+            dismiss(animated: true, completion: nil)
+        }
+        
+        //otherwsie we are dealing with a edit cancel rquest
+        else if let grabRefToNavigationController = navigationController
+        {
+            //pop scene off navigation stack and revert to
+            grabRefToNavigationController.popViewController(animated: true)
+        }
+         
+        //for code completeness - will not be reached...hopefully!
+        else {
+            fatalError("No Navigation controllers were presented :( ")
+        }
+        
     }
     
     @IBOutlet weak var addPhotoImage: UIImageView!

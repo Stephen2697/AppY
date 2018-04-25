@@ -398,6 +398,7 @@
                                     <outlet property="kcalLabel" destination="4DB-gJ-h2r" id="o28-ib-d0l"/>
                                     <outlet property="nameLabel" destination="OKd-y6-UWU" id="4os-36-FZ0"/>
                                     <outlet property="proteinLabel" destination="rde-au-PAe" id="wty-H2-tQk"/>
+                                    <segue destination="9ZT-Bh-lkQ" kind="show" id="dt7-5k-p2J"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -570,10 +571,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vL1-R8-OwZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3936.8000000000002" y="-1930.0492610837439"/>
+            <point key="canvasLocation" x="3932" y="-1489"/>
         </scene>
     </scenes>
     <resources>
         <image name="AD1" width="677" height="677"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dt7-5k-p2J"/>
+    </inferredMetricsTieBreakers>
 </document>

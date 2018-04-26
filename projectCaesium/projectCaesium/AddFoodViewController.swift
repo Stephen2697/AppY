@@ -12,56 +12,6 @@ import os.log
 class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate,UIImagePickerControllerDelegate  {
 
     //MARK: Properties
-    //Create our intermediary object variable to allow us to take user input and later save or discard it
-    var newFoodItem: FoodItem?
-    
-    
-    
-    //Simply revert to previous scene by dismissing current scene should the user press Cancel and any inputted data is not stored.
-    @IBAction func cancel(_ sender: UIBarButtonItem)
-    {
-         // Depending on style of presentation (modal or push presentation), this view controller needs to be dismissed in two different ways.
-         let isPresentingInAddMealMode = presentingViewController is UINavigationController
-        
-         if isPresentingInAddMealMode
-         {
-            dismiss(animated: true, completion: nil)
-         }
-         else if let owningNavigationController = navigationController
-         {
-            owningNavigationController.popViewController(animated: true)
-         }
-         else
-         {
-            fatalError("The MealViewController is not inside a navigation controller.")
-         }
-    }
-    
-    @IBAction func cancelButton(_ sender: UIBarButtonItem)
-    {
-        //Constant boolean which establishes is the directing view controller of type UINavigationController - if true we are dealing with an Add Food Item cancel request
-        let isPresentingInAddMealMode = presentingViewController is UINavigationController
-        
-        //now we simply dismiss the scene and exit back to the calling view
-        if isPresentingInAddMealMode
-        {
-            //dismiss scene
-            dismiss(animated: true, completion: nil)
-        }
-        
-        //otherwsie we are dealing with a edit cancel rquest
-        else if let grabRefToNavigationController = navigationController
-        {
-            //pop scene off navigation stack and revert to
-            grabRefToNavigationController.popViewController(animated: true)
-        }
-         
-        //for code completeness - will not be reached...hopefully!
-        else {
-            fatalError("No Navigation controllers were presented :( ")
-        }
-        
-    }
     
     @IBOutlet weak var addPhotoImage: UIImageView!
     @IBOutlet weak var saveButton: UIBarButtonItem!
@@ -71,6 +21,71 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
     @IBOutlet weak var proteinBox: UITextField!
     @IBOutlet weak var carbBox: UITextField!
     @IBOutlet weak var fatBox: UITextField!
+    
+    //Create our intermediary object variable to allow us to take user input and later save or discard it
+    var newFoodItem: FoodItem?
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        
+        //        setupNavBar()
+        
+        //take in user input using delegates
+        self.mealNameBox.delegate = self
+        self.caloriesBox.delegate = self
+        self.portionBox.delegate = self
+        self.proteinBox.delegate = self
+        self.carbBox.delegate = self
+        self.fatBox.delegate = self
+        
+        //If we are editing, then fill the textboxes with the existing object properties
+        if let foodItem = newFoodItem {
+            navigationItem.title = foodItem.foodName
+            mealNameBox.text   = foodItem.foodName
+            addPhotoImage.image = foodItem.foodPhoto
+            caloriesBox.text = String(foodItem.foodCalories)
+            portionBox.text = String(foodItem.gramSize)
+            proteinBox.text = String(foodItem.foodProteins)
+            carbBox.text = String(foodItem.foodCarbs)
+            fatBox.text = String(foodItem.foodFats)
+        }
+        
+        
+        //Disable Saves until valid entry
+        disableSaveOptNoText()
+    }
+    
+ 
+
+    @IBAction func cancelButton(_ sender: UIBarButtonItem)
+    {
+        //Constant boolean which establishes is the directing view controller of type UINavigationController - if true we are dealing with an Add Food Item cancel request
+        let isPresentingInAddFoodMode = presentingViewController is UINavigationController
+
+        print("vC: \(String(describing: presentingViewController))")
+
+        //now we simply dismiss the scene and exit back to the calling view
+        if isPresentingInAddFoodMode
+        {
+            //dismiss scene
+            dismiss(animated: true, completion: nil)
+        }
+
+        //otherwsie we are dealing with a edit cancel rquest - this works
+        else if let grabRefToNavigationController = navigationController
+        {
+            //pop scene off navigation stack and revert to
+            grabRefToNavigationController.popViewController(animated: true)
+        }
+
+        //for code completeness - will not be reached...hopefully!
+        else
+        {
+
+            fatalError("No Navigation controllers were presented :( ")
+        }
+    }
     
     
     //adopt ios11 nav bar effect
@@ -119,37 +134,10 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
         dismiss(animated: true, completion: nil)
     }
     
-    override func viewDidLoad()
+
+    //when user touches outside of editing window, dismiss keyboard
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
-        super.viewDidLoad()
-        
-        setupNavBar()
-        
-        self.mealNameBox.delegate = self
-        self.caloriesBox.delegate = self
-        self.portionBox.delegate = self
-        self.proteinBox.delegate = self
-        self.carbBox.delegate = self
-        self.fatBox.delegate = self
-        
-        //If we are editing, then fill the textboxes with the existing object properties
-        if let foodItem = newFoodItem {
-            navigationItem.title = foodItem.foodName
-            mealNameBox.text   = foodItem.foodName
-            addPhotoImage.image = foodItem.foodPhoto
-            caloriesBox.text = String(foodItem.foodCalories)
-            portionBox.text = String(foodItem.gramSize)
-            proteinBox.text = String(foodItem.foodProteins)
-            carbBox.text = String(foodItem.foodCarbs)
-            fatBox.text = String(foodItem.foodFats)
-        }
-        
-        
-        //Disable Saves until valid entry
-        disableSaveOptNoText()
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
     

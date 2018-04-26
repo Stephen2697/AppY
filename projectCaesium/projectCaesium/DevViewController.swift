@@ -12,7 +12,7 @@ class DevViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavBar()
+//        setupNavBar()
 
         // Do any additional setup after loading the view.
     }

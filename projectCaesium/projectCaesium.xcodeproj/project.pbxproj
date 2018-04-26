@@ -12,7 +12,6 @@
 		9457FAB82080FA0B00830784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9457FAB62080FA0B00830784 /* LaunchScreen.storyboard */; };
 		9457FAC32080FA0B00830784 /* projectCaesiumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FAC22080FA0B00830784 /* projectCaesiumTests.swift */; };
 		9457FACE2080FA0B00830784 /* projectCaesiumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FACD2080FA0B00830784 /* projectCaesiumUITests.swift */; };
-		9457FADC2084FE1000830784 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9457FADB2084FE1000830784 /* Default-568h@2x.png */; };
 		9457FAE220893BF200830784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FAAD2080FA0A00830784 /* AppDelegate.swift */; };
 		9457FAE320893BF200830784 /* AddFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FAAF2080FA0A00830784 /* AddFoodViewController.swift */; };
 		9457FAE420893BF200830784 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FADD2088DDAD00830784 /* FoodItem.swift */; };
@@ -55,7 +54,6 @@
 		9457FAC92080FA0B00830784 /* 123UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 123UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9457FACD2080FA0B00830784 /* projectCaesiumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectCaesiumUITests.swift; sourceTree = "<group>"; };
 		9457FACF2080FA0B00830784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9457FADB2084FE1000830784 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9457FADD2088DDAD00830784 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		9457FADF208937C700830784 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		946CD324208E12E60043E5A5 /* FoodItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemTableViewCell.swift; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				9457FAE520893FB100830784 /* File */,
-				9457FADB2084FE1000830784 /* Default-568h@2x.png */,
 				9457FAAC2080FA0A00830784 /* projectCaesium */,
 				9457FAC12080FA0B00830784 /* 123Tests */,
 				9457FACC2080FA0B00830784 /* 123UITests */,
@@ -266,7 +263,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9457FAB82080FA0B00830784 /* LaunchScreen.storyboard in Resources */,
-				9457FADC2084FE1000830784 /* Default-568h@2x.png in Resources */,
 				9457FAB52080FA0B00830784 /* Assets.xcassets in Resources */,
 				9457FAB32080FA0A00830784 /* Main.storyboard in Resources */,
 			);

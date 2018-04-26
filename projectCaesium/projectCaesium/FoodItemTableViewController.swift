@@ -18,7 +18,7 @@ class FoodItemTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavBar()
+//        setupNavBar()
         
         //Manually add an edit button with the required abilities pre-baked!
         navigationItem.leftBarButtonItem = editButtonItem
@@ -168,6 +168,8 @@ class FoodItemTableViewController: UITableViewController {
     @IBAction func unwindToFoodItemList(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.source as? AddFoodViewController, let food = sourceViewController.newFoodItem
         {
+            
+            
             //check if a row was selected in the index path, if so then we are dealing with an edit
             if let selectedIndexPath = tableView.indexPathForSelectedRow
             {
@@ -181,6 +183,7 @@ class FoodItemTableViewController: UITableViewController {
             {
                 // Add a new foodItem.
                 let newIndexPath = IndexPath(row: foodItems.count, section: 0)
+                
                 //add this food item to the food array
                 foodItems.append(food)
                 tableView.insertRows(at: [newIndexPath], with: .automatic)

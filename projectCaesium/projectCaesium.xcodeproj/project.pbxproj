@@ -18,6 +18,9 @@
 		9457FAE420893BF200830784 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FADD2088DDAD00830784 /* FoodItem.swift */; };
 		946CD325208E12E60043E5A5 /* FoodItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946CD324208E12E60043E5A5 /* FoodItemTableViewCell.swift */; };
 		946CD327208E18C00043E5A5 /* FoodItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946CD326208E18C00043E5A5 /* FoodItemTableViewController.swift */; };
+		94EF7D282090259800646A38 /* BoxCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF7D272090259800646A38 /* BoxCollectionViewCell.swift */; };
+		94EF7D2A20920B5B00646A38 /* DashCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF7D2920920B5B00646A38 /* DashCollectionViewCell.swift */; };
+		94EF7D2C20920B8500646A38 /* DashCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF7D2B20920B8500646A38 /* DashCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		946CD324208E12E60043E5A5 /* FoodItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemTableViewCell.swift; sourceTree = "<group>"; };
 		946CD326208E18C00043E5A5 /* FoodItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemTableViewController.swift; sourceTree = "<group>"; };
 		94EF7D26208FF6B800646A38 /* psd */ = {isa = PBXFileReference; lastKnownFileType = folder; name = psd; path = ../../../psd; sourceTree = "<group>"; };
+		94EF7D272090259800646A38 /* BoxCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxCollectionViewCell.swift; sourceTree = "<group>"; };
+		94EF7D2920920B5B00646A38 /* DashCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashCollectionViewCell.swift; sourceTree = "<group>"; };
+		94EF7D2B20920B8500646A38 /* DashCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +117,11 @@
 			children = (
 				94EF7D26208FF6B800646A38 /* psd */,
 				9457FAAD2080FA0A00830784 /* AppDelegate.swift */,
+				94EF7D272090259800646A38 /* BoxCollectionViewCell.swift */,
 				9457FAAF2080FA0A00830784 /* AddFoodViewController.swift */,
 				9457FAB12080FA0A00830784 /* Main.storyboard */,
+				94EF7D2920920B5B00646A38 /* DashCollectionViewCell.swift */,
+				94EF7D2B20920B8500646A38 /* DashCollectionViewController.swift */,
 				946CD324208E12E60043E5A5 /* FoodItemTableViewCell.swift */,
 				9457FADD2088DDAD00830784 /* FoodItem.swift */,
 				946CD326208E18C00043E5A5 /* FoodItemTableViewController.swift */,
@@ -281,10 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94EF7D2C20920B8500646A38 /* DashCollectionViewController.swift in Sources */,
 				946CD325208E12E60043E5A5 /* FoodItemTableViewCell.swift in Sources */,
 				9457FAE320893BF200830784 /* AddFoodViewController.swift in Sources */,
 				946CD327208E18C00043E5A5 /* FoodItemTableViewController.swift in Sources */,
 				9457FAE420893BF200830784 /* FoodItem.swift in Sources */,
+				94EF7D2A20920B5B00646A38 /* DashCollectionViewCell.swift in Sources */,
+				94EF7D282090259800646A38 /* BoxCollectionViewCell.swift in Sources */,
 				9457FAE220893BF200830784 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

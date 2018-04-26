@@ -18,20 +18,24 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
     
     
     //Simply revert to previous scene by dismissing current scene should the user press Cancel and any inputted data is not stored.
-    /*@IBAction func cancel(_ sender: UIBarButtonItem) {
-     // Depending on style of presentation (modal or push presentation), this view controller needs to be dismissed in two different ways.
-     let isPresentingInAddMealMode = presentingViewController is UINavigationController
-     
-     if isPresentingInAddMealMode {
-     dismiss(animated: true, completion: nil)
-     }
-     else if let owningNavigationController = navigationController{
-     owningNavigationController.popViewController(animated: true)
-     }
-     else {
-     fatalError("The MealViewController is not inside a navigation controller.")
-     }
-     }*/
+    @IBAction func cancel(_ sender: UIBarButtonItem)
+    {
+         // Depending on style of presentation (modal or push presentation), this view controller needs to be dismissed in two different ways.
+         let isPresentingInAddMealMode = presentingViewController is UINavigationController
+        
+         if isPresentingInAddMealMode
+         {
+            dismiss(animated: true, completion: nil)
+         }
+         else if let owningNavigationController = navigationController
+         {
+            owningNavigationController.popViewController(animated: true)
+         }
+         else
+         {
+            fatalError("The MealViewController is not inside a navigation controller.")
+         }
+    }
     
     @IBAction func cancelButton(_ sender: UIBarButtonItem)
     {
@@ -67,6 +71,13 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
     @IBOutlet weak var proteinBox: UITextField!
     @IBOutlet weak var carbBox: UITextField!
     @IBOutlet weak var fatBox: UITextField!
+    
+    
+    //adopt ios11 nav bar effect
+    func setupNavBar()
+    {
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
     
     //Gesture Recognising - User Selects to Add Image
     
@@ -111,6 +122,8 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        setupNavBar()
         
         self.mealNameBox.delegate = self
         self.caloriesBox.delegate = self

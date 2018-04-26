@@ -18,7 +18,8 @@ class FoodItemTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupNavBar()
+        
         //Manually add an edit button with the required abilities pre-baked!
         navigationItem.leftBarButtonItem = editButtonItem
         
@@ -77,6 +78,12 @@ class FoodItemTableViewController: UITableViewController {
         default:
             fatalError("Invalid Segue Identifier Calling: \(String(describing: segue.identifier))")
         }
+    }
+    
+    //adopt ios11 nav bar effect
+    func setupNavBar()
+    {
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 
     override func didReceiveMemoryWarning() {

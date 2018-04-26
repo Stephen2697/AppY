@@ -324,27 +324,27 @@
         <!--Developer Information-->
         <scene sceneID="rKY-ej-BC2">
             <objects>
-                <viewController id="RlD-sm-pSw" sceneMemberID="viewController">
+                <viewController id="RlD-sm-pSw" customClass="DevViewController" customModule="_23" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rLC-UD-URh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beta Software Property of Stephen Alger © 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnC-PJ-PbM">
-                                <rect key="frame" x="16" y="110" width="343" height="38"/>
+                                <rect key="frame" x="16" y="159" width="343" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Code Distributed on Github/Stephen2697" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8D-bg-Jbb">
-                                <rect key="frame" x="16" y="171" width="343" height="38"/>
+                                <rect key="frame" x="16" y="220" width="343" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="App Version 0.1B - 0xA89" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2C-IX-v0a">
-                                <rect key="frame" x="16" y="236" width="343" height="38"/>
+                                <rect key="frame" x="16" y="285" width="343" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
@@ -451,7 +451,7 @@
         <!--Welcome-->
         <scene sceneID="tIn-vc-Hil">
             <objects>
-                <collectionViewController id="0EH-ej-OGj" sceneMemberID="viewController">
+                <collectionViewController id="0EH-ej-OGj" customClass="DashCollectionViewController" customModule="_23" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="nkl-z9-USs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -566,7 +566,7 @@
                             <outlet property="delegate" destination="0EH-ej-OGj" id="TiT-tR-spN"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Welcome" id="Yc8-34-yv9"/>
+                    <navigationItem key="navigationItem" title="Welcome" largeTitleDisplayMode="always" id="Yc8-34-yv9"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x7M-9w-phv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -583,8 +583,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="8Jq-E2-pRz" kind="relationship" relationship="viewControllers" id="YVn-uz-jPB"/>
-                        <segue destination="JMP-Yi-Wta" kind="relationship" relationship="viewControllers" id="GWe-ij-Lke"/>
                         <segue destination="rIX-S1-arC" kind="relationship" relationship="viewControllers" id="aN0-CB-b9P"/>
+                        <segue destination="JMP-Yi-Wta" kind="relationship" relationship="viewControllers" id="GWe-ij-Lke"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vOH-vA-kMv" userLabel="First Responder" sceneMemberID="firstResponder"/>

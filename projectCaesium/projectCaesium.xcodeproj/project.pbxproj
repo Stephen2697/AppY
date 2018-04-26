@@ -21,6 +21,7 @@
 		94EF7D282090259800646A38 /* BoxCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF7D272090259800646A38 /* BoxCollectionViewCell.swift */; };
 		94EF7D2A20920B5B00646A38 /* DashCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF7D2920920B5B00646A38 /* DashCollectionViewCell.swift */; };
 		94EF7D2C20920B8500646A38 /* DashCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF7D2B20920B8500646A38 /* DashCollectionViewController.swift */; };
+		94EF7D2E20920D9000646A38 /* DevViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF7D2D20920D9000646A38 /* DevViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		94EF7D272090259800646A38 /* BoxCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxCollectionViewCell.swift; sourceTree = "<group>"; };
 		94EF7D2920920B5B00646A38 /* DashCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashCollectionViewCell.swift; sourceTree = "<group>"; };
 		94EF7D2B20920B8500646A38 /* DashCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashCollectionViewController.swift; sourceTree = "<group>"; };
+		94EF7D2D20920D9000646A38 /* DevViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				94EF7D272090259800646A38 /* BoxCollectionViewCell.swift */,
 				9457FAAF2080FA0A00830784 /* AddFoodViewController.swift */,
 				9457FAB12080FA0A00830784 /* Main.storyboard */,
+				94EF7D2D20920D9000646A38 /* DevViewController.swift */,
 				94EF7D2920920B5B00646A38 /* DashCollectionViewCell.swift */,
 				94EF7D2B20920B8500646A38 /* DashCollectionViewController.swift */,
 				946CD324208E12E60043E5A5 /* FoodItemTableViewCell.swift */,
@@ -296,6 +299,7 @@
 				946CD327208E18C00043E5A5 /* FoodItemTableViewController.swift in Sources */,
 				9457FAE420893BF200830784 /* FoodItem.swift in Sources */,
 				94EF7D2A20920B5B00646A38 /* DashCollectionViewCell.swift in Sources */,
+				94EF7D2E20920D9000646A38 /* DevViewController.swift in Sources */,
 				94EF7D282090259800646A38 /* BoxCollectionViewCell.swift in Sources */,
 				9457FAE220893BF200830784 /* AppDelegate.swift in Sources */,
 			);

@@ -188,12 +188,12 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
 //        let foodPhoto = photoImageView.image
         let Time = "20.00" //replace with action time
         
-        let Gram: Int? = Int(portionBox.text!)
+        let Gram: Float? = Float(portionBox.text!)
         let Name = mealNameBox.text ?? ""
         let Photo = addPhotoImage.image
-        let Carbs: Int? = Int(carbBox.text!)
-        let Fats: Int? = Int(fatBox.text!)
-        let Proteins: Int? = Int(proteinBox.text!)
+        let Carbs: Float? = Float(carbBox.text!)
+        let Fats: Float? = Float(fatBox.text!)
+        let Proteins: Float? = Float(proteinBox.text!)
         let Kcals: Int? = Int(caloriesBox.text!)
         
         

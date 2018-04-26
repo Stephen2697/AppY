@@ -15,12 +15,12 @@ class FoodItem: NSObject, NSCoding
 
     //MARK: Food Variables
     var LogTime: String
-    var gramSize: Int
+    var gramSize: Float
     var foodName: String
     var foodPhoto: UIImage
-    var foodCarbs: Int
-    var foodFats: Int
-    var foodProteins: Int
+    var foodCarbs: Float
+    var foodFats: Float
+    var foodProteins: Float
     var foodCalories: Int
     var actCalories: Float
     var expCalories: Float
@@ -50,7 +50,7 @@ class FoodItem: NSObject, NSCoding
     } //end struct
     
     //MARK: Initialisation
-    init?(Time:String, Gram: Int, Name: String, Photo: UIImage?, Carbs: Int, Fats: Int, Proteins: Int, Kcals: Int)
+    init?(Time:String, Gram: Float, Name: String, Photo: UIImage?, Carbs: Float, Fats: Float, Proteins: Float, Kcals: Int)
     {
         
         
@@ -63,8 +63,9 @@ class FoodItem: NSObject, NSCoding
         self.foodFats = Fats
         self.foodProteins = Proteins
         self.foodCalories = Kcals
-        self.actCalories = ((Float(Kcals))*(Float(Gram)/100.00))
-        self.expCalories = Float((Carbs*4)+(Fats*9)+(Proteins*4)*((Gram/100)))
+        self.actCalories = ((Float(Kcals))*((Gram)/100.00))
+        //debugging
+        self.expCalories = 500.00
         print("Total Cals: \(self.actCalories)")
         print("Expected Calories is \(self.expCalories)")
         
@@ -107,13 +108,13 @@ convenience modifier states that this is a secondary initializer.*/
         
         
         //Decode Integer returns, not downcasting required as integer returned by decodeInteger()
-        let Carbs = aDecoder.decodeInteger(forKey: PropertyKey.Carbs)
-        let Fats = aDecoder.decodeInteger(forKey: PropertyKey.Fats)
-        let Proteins = aDecoder.decodeInteger(forKey: PropertyKey.Proteins)
+        let Carbs = aDecoder.decodeFloat(forKey: PropertyKey.Carbs)
+        let Fats = aDecoder.decodeFloat(forKey: PropertyKey.Fats)
+        let Proteins = aDecoder.decodeFloat(forKey: PropertyKey.Proteins)
         let Calories = aDecoder.decodeInteger(forKey: PropertyKey.Calories)
 //        let eCalories = aDecoder.decodeInteger(forKey: PropertyKey.eCalories)
 //        let aCalories = aDecoder.decodeInteger(forKey: PropertyKey.aCalories)
-        let Size = aDecoder.decodeInteger(forKey: PropertyKey.Size)
+        let Size = aDecoder.decodeFloat(forKey: PropertyKey.Size)
 
         
         //Initiliase the decoded data into the object

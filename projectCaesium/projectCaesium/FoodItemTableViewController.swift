@@ -23,14 +23,14 @@ class FoodItemTableViewController: UITableViewController {
         //Manually add an edit button with the required abilities pre-baked!
         navigationItem.leftBarButtonItem = editButtonItem
         
-        if let savedMeals = loadEntries() {
-            foodItems += savedMeals
-        }
+//        if let savedMeals = loadEntries() {
+//            foodItems += savedMeals
+//        }
         
-        else {
+//        else {
             // Load our sample data
             loadSampleFoods()
-        }
+//        }
     }
     
     //MARK: Navigation
@@ -154,9 +154,9 @@ class FoodItemTableViewController: UITableViewController {
         cell.nameLabel.text = foodItem.foodName
         cell.cellImage.image = foodItem.foodPhoto
         cell.kcalLabel.text =   "Kcals: \(String(format: "%.0f", foodItem.actCalories))"
-        cell.carbLabel.text = "Car: \(String(foodItem.foodCarbs))%"
-        cell.proteinLabel.text = "Pro: \(String(foodItem.foodProteins))%"
-        cell.fatLabel.text = "Fat: \(String(foodItem.foodFats))%"
+        cell.carbLabel.text = "Car: \(String(format: "%.0f", foodItem.foodCarbs))%"
+        cell.proteinLabel.text = "Pro: \(String(format: "%.0f", foodItem.foodProteins))%"
+        cell.fatLabel.text = "Fat: \(String(format: "%.0f", foodItem.foodFats))%"
         
         
         return cell
@@ -226,53 +226,30 @@ class FoodItemTableViewController: UITableViewController {
         let photo4 = UIImage(named: "Sample4")
         let photo5 = UIImage(named: "Sample5")
         
-        guard let foodOne = FoodItem(Time: "20.30", Gram: 100, Name: "Crisps & Dip", Photo: photo1, Carbs: 30, Fats: 15, Proteins: 5, Kcals: 200) else {
+        guard let foodOne = FoodItem(Time: "20.30", Gram: 100.00, Name: "Crisps & Dip", Photo: photo1, Carbs: 30.02, Fats: 15.05, Proteins: 5.1, Kcals: 200) else {
             fatalError("Unable to instantiate foodOne")
         }
         
         
-        guard let foodTwo = FoodItem(Time: "21.30", Gram: 300, Name: "Burger", Photo: photo2, Carbs: 5, Fats: 29, Proteins: 24, Kcals: 377) else {
+        guard let foodTwo = FoodItem(Time: "21.30", Gram: 300.00, Name: "Burger", Photo: photo2, Carbs: 5.1, Fats: 29.9, Proteins: 24.4, Kcals: 377) else {
             fatalError("Unable to instantiate foodTwo")
         }
         
-        guard let foodThree = FoodItem(Time: "22.30", Gram: 50, Name: "Caesar Salad", Photo: photo3, Carbs: 30, Fats: 5, Proteins: 10, Kcals: 205) else {
+        guard let foodThree = FoodItem(Time: "22.30", Gram: 50.00, Name: "Caesar Salad", Photo: photo3, Carbs: 6.9, Fats: 8.9, Proteins: 10.1, Kcals: 205) else {
             fatalError("Unable to instantiate foodThree")
         }
         
-        guard let foodFour = FoodItem(Time: "23.30", Gram: 500, Name: "Pepper Steak", Photo: photo4, Carbs: 5, Fats: 29, Proteins: 24, Kcals: 377) else {
+        guard let foodFour = FoodItem(Time: "23.30", Gram: 500.00, Name: "Pepper Steak", Photo: photo4, Carbs: 5.2, Fats: 29.3, Proteins: 24.4, Kcals: 377) else {
             fatalError("Unable to instantiate foodFour")
         }
         
-        guard let foodFive = FoodItem(Time: "23.32", Gram: 50, Name: "Mixed Fruit Dessert", Photo: photo5, Carbs: 30, Fats: 0, Proteins: 3, Kcals: 132) else {
+        guard let foodFive = FoodItem(Time: "23.32", Gram: 50.00, Name: "Mixed Fruit Dessert", Photo: photo5, Carbs: 30, Fats: 0, Proteins: 3, Kcals: 132) else {
             fatalError("Unable to instantiate foodFive")
         }
         
-        guard let foodSix = FoodItem(Time: "20.30", Gram: 100, Name: "Crisps & Dip", Photo: photo1, Carbs: 30, Fats: 15, Proteins: 5, Kcals: 200) else {
-            fatalError("Unable to instantiate foodSix")
-        }
         
         
-        guard let food7 = FoodItem(Time: "21.30", Gram: 300, Name: "Burger", Photo: photo2, Carbs: 5, Fats: 29, Proteins: 24, Kcals: 377) else {
-            fatalError("Unable to instantiate food7")
-        }
-        
-        guard let food8 = FoodItem(Time: "22.30", Gram: 150, Name: "Caesar Salad", Photo: photo3, Carbs: 30, Fats: 5, Proteins: 10, Kcals: 205) else {
-            fatalError("Unable to instantiate food8")
-        }
-        
-        guard let food9 = FoodItem(Time: "23.30", Gram: 500, Name: "Pepper Steak", Photo: photo4, Carbs: 5, Fats: 29, Proteins: 24, Kcals: 377) else {
-            fatalError("Unable to instantiate food9")
-        }
-        
-        guard let food10 = FoodItem(Time: "23.32", Gram: 50, Name: "Mixed Fruit Dessert", Photo: photo5, Carbs: 30, Fats: 0, Proteins: 3, Kcals: 132) else {
-            fatalError("Unable to instantiate food10")
-        }
-        
-        guard let food11 = FoodItem(Time: "23.32", Gram: 99, Name: "Mixed Fruit Dessert", Photo: photo5, Carbs: 30, Fats: 0, Proteins: 3, Kcals: 132) else {
-            fatalError("Unable to instantiate food11")
-        }
-        
-        foodItems += [foodOne, foodTwo, foodThree, foodFour, foodFive, foodSix, food7, food8, food9, food10, food11]
+        foodItems += [foodOne, foodTwo, foodThree, foodFour, foodFive]
         
     } //end loadsample()
     

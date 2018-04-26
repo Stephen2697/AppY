@@ -204,6 +204,7 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="j2w-WO-18r" firstAttribute="leading" secondItem="252-EK-ruM" secondAttribute="leading" id="ZVJ-qe-nRH"/>
                             <constraint firstItem="j2w-WO-18r" firstAttribute="trailing" secondItem="252-EK-ruM" secondAttribute="trailing" id="nsC-l5-17K"/>
@@ -211,6 +212,9 @@
                             <constraint firstItem="j2w-WO-18r" firstAttribute="top" secondItem="252-EK-ruM" secondAttribute="top" constant="16" id="vac-qS-oxw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="252-EK-ruM"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="TT5-9U-tPa" appends="YES" id="izG-RJ-UIe"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Add Food Item" id="ZiT-Ln-TYA">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="v6G-kO-u8k">
@@ -239,14 +243,20 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GHs-Zx-IaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="MnT-NY-wDd"/>
                 <exit id="5me-of-tzn" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="G3Y-lk-ycT">
                     <connections>
                         <action selector="selectImageFromPhotoLibrary:" destination="9ZT-Bh-lkQ" id="Sxq-LX-Dcj"/>
                     </connections>
                 </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="TT5-9U-tPa">
+                    <connections>
+                        <segue destination="OtF-OH-PDs" kind="presentation" modalTransitionStyle="crossDissolve" id="oUk-wU-0O0"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3143" y="-459"/>
+            <point key="canvasLocation" x="2801" y="-1550"/>
         </scene>
         <!--Developer Information-->
         <scene sceneID="rKY-ej-BC2">

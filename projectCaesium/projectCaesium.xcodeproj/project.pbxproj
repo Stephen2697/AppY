@@ -21,6 +21,11 @@
 		94EF7D2A20920B5B00646A38 /* DashCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF7D2920920B5B00646A38 /* DashCollectionViewCell.swift */; };
 		94EF7D2C20920B8500646A38 /* DashCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF7D2B20920B8500646A38 /* DashCollectionViewController.swift */; };
 		94EF7D2E20920D9000646A38 /* DevViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF7D2D20920D9000646A38 /* DevViewController.swift */; };
+		94EF7D4920927C9D00646A38 /* AppY1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 94EF7D4520927C9C00646A38 /* AppY1024.png */; };
+		94EF7D4A20927C9D00646A38 /* AppY.psd in Resources */ = {isa = PBXBuildFile; fileRef = 94EF7D4620927C9D00646A38 /* AppY.psd */; };
+		94EF7D4E20927D2F00646A38 /* AppY1024_80_@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 94EF7D4C20927D2F00646A38 /* AppY1024_80_@2.png */; };
+		94EF7D4F20927D2F00646A38 /* AppY1024_120_@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 94EF7D4D20927D2F00646A38 /* AppY1024_120_@2.png */; };
+		94EF7D5120927E3000646A38 /* AppY_120_@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 94EF7D5020927E2F00646A38 /* AppY_120_@2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,11 +63,15 @@
 		9457FADF208937C700830784 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		946CD324208E12E60043E5A5 /* FoodItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemTableViewCell.swift; sourceTree = "<group>"; };
 		946CD326208E18C00043E5A5 /* FoodItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemTableViewController.swift; sourceTree = "<group>"; };
-		94EF7D26208FF6B800646A38 /* psd */ = {isa = PBXFileReference; lastKnownFileType = folder; name = psd; path = ../../../psd; sourceTree = "<group>"; };
 		94EF7D272090259800646A38 /* BoxCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxCollectionViewCell.swift; sourceTree = "<group>"; };
 		94EF7D2920920B5B00646A38 /* DashCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashCollectionViewCell.swift; sourceTree = "<group>"; };
 		94EF7D2B20920B8500646A38 /* DashCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashCollectionViewController.swift; sourceTree = "<group>"; };
 		94EF7D2D20920D9000646A38 /* DevViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevViewController.swift; sourceTree = "<group>"; };
+		94EF7D4520927C9C00646A38 /* AppY1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppY1024.png; path = projectCaesium/Assets.xcassets/AppY1024.png; sourceTree = "<group>"; };
+		94EF7D4620927C9D00646A38 /* AppY.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = AppY.psd; path = projectCaesium/Assets.xcassets/AppY.psd; sourceTree = "<group>"; };
+		94EF7D4C20927D2F00646A38 /* AppY1024_80_@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppY1024_80_@2.png"; path = "projectCaesium/Assets.xcassets/AppY1024_80_@2.png"; sourceTree = "<group>"; };
+		94EF7D4D20927D2F00646A38 /* AppY1024_120_@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppY1024_120_@2.png"; path = "projectCaesium/Assets.xcassets/AppY1024_120_@2.png"; sourceTree = "<group>"; };
+		94EF7D5020927E2F00646A38 /* AppY_120_@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppY_120_@2.png"; path = "projectCaesium/Assets.xcassets/AppY_120_@2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +102,8 @@
 		9457FAA12080FA0A00830784 = {
 			isa = PBXGroup;
 			children = (
-				9457FAE520893FB100830784 /* File */,
+				94EF7D4120927C5500646A38 /* AppIcons */,
+				9457FAE520893FB100830784 /* BetaStuff */,
 				9457FAAC2080FA0A00830784 /* projectCaesium */,
 				9457FAC12080FA0B00830784 /* 123Tests */,
 				9457FACC2080FA0B00830784 /* 123UITests */,
@@ -114,7 +124,6 @@
 		9457FAAC2080FA0A00830784 /* projectCaesium */ = {
 			isa = PBXGroup;
 			children = (
-				94EF7D26208FF6B800646A38 /* psd */,
 				9457FAAD2080FA0A00830784 /* AppDelegate.swift */,
 				94EF7D272090259800646A38 /* BoxCollectionViewCell.swift */,
 				9457FAAF2080FA0A00830784 /* AddFoodViewController.swift */,
@@ -150,12 +159,24 @@
 			path = 123UITests;
 			sourceTree = "<group>";
 		};
-		9457FAE520893FB100830784 /* File */ = {
+		9457FAE520893FB100830784 /* BetaStuff */ = {
 			isa = PBXGroup;
 			children = (
 				9457FADF208937C700830784 /* File.swift */,
 			);
-			name = File;
+			name = BetaStuff;
+			sourceTree = "<group>";
+		};
+		94EF7D4120927C5500646A38 /* AppIcons */ = {
+			isa = PBXGroup;
+			children = (
+				94EF7D5020927E2F00646A38 /* AppY_120_@2.png */,
+				94EF7D4C20927D2F00646A38 /* AppY1024_80_@2.png */,
+				94EF7D4D20927D2F00646A38 /* AppY1024_120_@2.png */,
+				94EF7D4620927C9D00646A38 /* AppY.psd */,
+				94EF7D4520927C9C00646A38 /* AppY1024.png */,
+			);
+			name = AppIcons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +283,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94EF7D4E20927D2F00646A38 /* AppY1024_80_@2.png in Resources */,
 				9457FAB82080FA0B00830784 /* LaunchScreen.storyboard in Resources */,
+				94EF7D4920927C9D00646A38 /* AppY1024.png in Resources */,
 				9457FAB52080FA0B00830784 /* Assets.xcassets in Resources */,
+				94EF7D4F20927D2F00646A38 /* AppY1024_120_@2.png in Resources */,
 				9457FAB32080FA0A00830784 /* Main.storyboard in Resources */,
+				94EF7D4A20927C9D00646A38 /* AppY.psd in Resources */,
+				94EF7D5120927E3000646A38 /* AppY_120_@2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

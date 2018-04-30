@@ -25,14 +25,14 @@ class FoodItemTableViewController: UITableViewController {
         //Manually add an edit button with the required abilities pre-baked!
         navigationItem.leftBarButtonItem = editButtonItem
         
-//        if let savedMeals = loadEntries() {
-//            foodItems += savedMeals
-//        }
+        if let savedMeals = loadEntries() {
+            foodItems += savedMeals
+        }
         
-//        else {
+        else {
             // Load our sample data
             loadSampleFoods()
-//        }
+        }
     }
     
     //MARK: Navigation

@@ -16,6 +16,7 @@ class DevViewController: UIViewController {
         kcalIndicator.text = String(Count.kcalCounter)
     }
     
+<<<<<<< HEAD
     @IBOutlet weak var kcalIndicator: UILabel!
     
     
@@ -25,6 +26,12 @@ class DevViewController: UIViewController {
 //        setupNavBar()
         
        
+=======
+    override func viewDidLoad() {
+        super.viewDidLoad()
+//        setupNavBar()
+
+>>>>>>> parent of 7fec8f3... Added Calorie Counting
         // Do any additional setup after loading the view.
     }
 

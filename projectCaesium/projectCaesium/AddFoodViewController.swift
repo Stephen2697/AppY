@@ -187,14 +187,13 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
         //(??) unrwaps the optional string returned - if nil is returned an empty string ("") is returned.
         //let Time: Date = Date() //replace with action time
         
-        let Time: Date = Date()
         
-//        let formatter = DateFormatter()
-//        formatter.setLocalizedDateFormatFromTemplate("dd/MM/yy, HH:mm:ss")
-//        let Time = formatter.string(from: Date())
-//
-//        print("This date: [\(formatter.string(from: Date()))]" )
-//        
+        let formatter = DateFormatter()
+        formatter.setLocalizedDateFormatFromTemplate("dd/MM/yy, HH:mm:ss")
+        let Time = formatter.string(from: Date())
+        
+        print("This date: [\(formatter.string(from: Date()))]" )
+        
         let Gram: Float? = Float(portionBox.text!)
         let Name = mealNameBox.text ?? ""
         let Photo = addPhotoImage.image
@@ -208,8 +207,6 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
         //Configure the new FoodItem object to be passed to FoodItemTableViewController by calling FoodItem's initialiser
         
         newFoodItem = FoodItem(Time:Time, Gram: Gram!, Name: Name, Photo: Photo, Carbs: Carbs!, Fats: Fats!, Proteins: Proteins!, Kcals: Kcals!)
-        
-        dump(newFoodItem)
     }
     
     //MARK: Private Functions

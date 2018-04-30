@@ -23,8 +23,6 @@ class FoodItem: NSObject, NSCoding
     var foodCalories: Int
     var actCalories: Float
     var expCalories: Float
-//    var day, month, year : Int
-
     
     //MARK: Encode/Decode Struct Properties
     //static as these constants belong to the structure itself and not its instances (e.g. PropertyKey.LogTime)
@@ -65,13 +63,6 @@ class FoodItem: NSObject, NSCoding
         
 
     }//end initialisation
-    
-    func formatDate(actionDate: Date) ->  (Day: Int, Month: Int, Year:Int)
-    {
-        let calender = Calendar.current
-        let components = calender.dateComponents([.year,.month,.day,.hour,.minute,.second], from: actionDate)
-        return(components.day!, components.month!, components.year!)
-    }
     
     //MARK: Archive Path
     //static as these constants belong to the class not instances of the class

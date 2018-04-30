@@ -13,18 +13,22 @@ class DevViewController: UIViewController {
     @IBAction func getTimeBTN(_ sender: UIButton)
     {
         getTime()
+        kcalIndicator.text = String(Count.kcalCounter)
     }
     
     @IBOutlet weak var kcalIndicator: UILabel!
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 //        setupNavBar()
         
-        //kcalIndicator.text += " \(KcalCounter)"
+       
         // Do any additional setup after loading the view.
     }
+
+
     
     func getTime()
     {

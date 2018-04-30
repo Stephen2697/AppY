@@ -16,8 +16,7 @@ class FoodItemTableViewController: UITableViewController {
     //create array of objects of class type: foodItem
     var foodItems = [FoodItem]()
     
-    //track kcals
-    var kcalCounter: Float = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -161,8 +160,8 @@ class FoodItemTableViewController: UITableViewController {
         cell.proteinLabel.text = "Pro: \(String(format: "%.0f", foodItem.foodProteins))g"
         cell.fatLabel.text = "Fat: \(String(format: "%.0f", foodItem.foodFats))g"
         
-        kcalCounter += foodItem.actCalories
-        print("KC: \(kcalCounter)")
+        Count.kcalCounter += foodItem.actCalories
+        print("KC: \(Count.kcalCounter)")
         return cell
     }
     

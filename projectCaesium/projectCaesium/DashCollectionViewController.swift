@@ -11,12 +11,13 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class DashCollectionViewController: UICollectionViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupNavBar()
-
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -26,6 +27,8 @@ class DashCollectionViewController: UICollectionViewController {
         // Do any additional setup after loading the view.
     }
 
+
+    
     //adopt ios11 nav bar effect
     func setupNavBar()
     {

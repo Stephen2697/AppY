@@ -10,11 +10,26 @@ import UIKit
 
 class DevViewController: UIViewController {
 
+    @IBAction func getTimeBTN(_ sender: UIButton)
+    {
+        getTime()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        setupNavBar()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func getTime()
+    {
+        var enterString: String = ""
+        
+        
+        //create instance of TimeX
+        let instTime = TimeX.init(enter: enterString)
+        
     }
 
     override func didReceiveMemoryWarning() {

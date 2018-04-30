@@ -13,7 +13,7 @@ class TimeX {
     
     
     
-    init? (today: String)
+    init? (enter: String)
     {
         
         self.today = getTodayString()

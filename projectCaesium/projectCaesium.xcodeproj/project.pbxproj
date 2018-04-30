@@ -12,15 +12,16 @@
 		9457FAB82080FA0B00830784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9457FAB62080FA0B00830784 /* LaunchScreen.storyboard */; };
 		9457FAC32080FA0B00830784 /* projectCaesiumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FAC22080FA0B00830784 /* projectCaesiumTests.swift */; };
 		9457FACE2080FA0B00830784 /* projectCaesiumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FACD2080FA0B00830784 /* projectCaesiumUITests.swift */; };
-		9457FAE220893BF200830784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FAAD2080FA0A00830784 /* AppDelegate.swift */; };
-		9457FAE320893BF200830784 /* AddFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FAAF2080FA0A00830784 /* AddFoodViewController.swift */; };
-		9457FAE420893BF200830784 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FADD2088DDAD00830784 /* FoodItem.swift */; };
-		946CD325208E12E60043E5A5 /* FoodItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946CD324208E12E60043E5A5 /* FoodItemTableViewCell.swift */; };
-		946CD327208E18C00043E5A5 /* FoodItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946CD326208E18C00043E5A5 /* FoodItemTableViewController.swift */; };
-		94EF7D282090259800646A38 /* BoxCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF7D272090259800646A38 /* BoxCollectionViewCell.swift */; };
-		94EF7D2A20920B5B00646A38 /* DashCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF7D2920920B5B00646A38 /* DashCollectionViewCell.swift */; };
-		94EF7D2C20920B8500646A38 /* DashCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF7D2B20920B8500646A38 /* DashCollectionViewController.swift */; };
-		94EF7D2E20920D9000646A38 /* DevViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF7D2D20920D9000646A38 /* DevViewController.swift */; };
+		949D5A92209717E800AA2067 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FAAD2080FA0A00830784 /* AppDelegate.swift */; };
+		949D5A93209717F100AA2067 /* BoxCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF7D272090259800646A38 /* BoxCollectionViewCell.swift */; };
+		949D5A94209717F100AA2067 /* AddFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FAAF2080FA0A00830784 /* AddFoodViewController.swift */; };
+		949D5A95209717F100AA2067 /* DevViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF7D2D20920D9000646A38 /* DevViewController.swift */; };
+		949D5A96209717F100AA2067 /* DashCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF7D2920920B5B00646A38 /* DashCollectionViewCell.swift */; };
+		949D5A97209717F100AA2067 /* DashCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF7D2B20920B8500646A38 /* DashCollectionViewController.swift */; };
+		949D5A98209717F100AA2067 /* FoodItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946CD324208E12E60043E5A5 /* FoodItemTableViewCell.swift */; };
+		949D5A99209717F100AA2067 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FADD2088DDAD00830784 /* FoodItem.swift */; };
+		949D5A9A209717F100AA2067 /* FoodItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946CD326208E18C00043E5A5 /* FoodItemTableViewController.swift */; };
+		949D5A9B2097185D00AA2067 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9457FADF208937C700830784 /* File.swift */; };
 		94EF7D4920927C9D00646A38 /* AppY1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 94EF7D4520927C9C00646A38 /* AppY1024.png */; };
 		94EF7D4A20927C9D00646A38 /* AppY.psd in Resources */ = {isa = PBXBuildFile; fileRef = 94EF7D4620927C9D00646A38 /* AppY.psd */; };
 		94EF7D4E20927D2F00646A38 /* AppY1024_80_@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 94EF7D4C20927D2F00646A38 /* AppY1024_80_@2.png */; };
@@ -124,6 +125,7 @@
 		9457FAAC2080FA0A00830784 /* projectCaesium */ = {
 			isa = PBXGroup;
 			children = (
+				9457FADF208937C700830784 /* File.swift */,
 				9457FAAD2080FA0A00830784 /* AppDelegate.swift */,
 				94EF7D272090259800646A38 /* BoxCollectionViewCell.swift */,
 				9457FAAF2080FA0A00830784 /* AddFoodViewController.swift */,
@@ -162,7 +164,6 @@
 		9457FAE520893FB100830784 /* BetaStuff */ = {
 			isa = PBXGroup;
 			children = (
-				9457FADF208937C700830784 /* File.swift */,
 			);
 			name = BetaStuff;
 			sourceTree = "<group>";
@@ -315,15 +316,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94EF7D2C20920B8500646A38 /* DashCollectionViewController.swift in Sources */,
-				946CD325208E12E60043E5A5 /* FoodItemTableViewCell.swift in Sources */,
-				9457FAE320893BF200830784 /* AddFoodViewController.swift in Sources */,
-				946CD327208E18C00043E5A5 /* FoodItemTableViewController.swift in Sources */,
-				9457FAE420893BF200830784 /* FoodItem.swift in Sources */,
-				94EF7D2A20920B5B00646A38 /* DashCollectionViewCell.swift in Sources */,
-				94EF7D2E20920D9000646A38 /* DevViewController.swift in Sources */,
-				94EF7D282090259800646A38 /* BoxCollectionViewCell.swift in Sources */,
-				9457FAE220893BF200830784 /* AppDelegate.swift in Sources */,
+				949D5A93209717F100AA2067 /* BoxCollectionViewCell.swift in Sources */,
+				949D5A94209717F100AA2067 /* AddFoodViewController.swift in Sources */,
+				949D5A95209717F100AA2067 /* DevViewController.swift in Sources */,
+				949D5A96209717F100AA2067 /* DashCollectionViewCell.swift in Sources */,
+				949D5A97209717F100AA2067 /* DashCollectionViewController.swift in Sources */,
+				949D5A9B2097185D00AA2067 /* File.swift in Sources */,
+				949D5A98209717F100AA2067 /* FoodItemTableViewCell.swift in Sources */,
+				949D5A99209717F100AA2067 /* FoodItem.swift in Sources */,
+				949D5A9A209717F100AA2067 /* FoodItemTableViewController.swift in Sources */,
+				949D5A92209717E800AA2067 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

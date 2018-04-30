@@ -8,6 +8,7 @@
 
 import UIKit
 
-class DashCollectionViewCell: UICollectionViewCell {
-    
+class DashCollectionViewCell: UICollectionViewCell
+{
+
 }

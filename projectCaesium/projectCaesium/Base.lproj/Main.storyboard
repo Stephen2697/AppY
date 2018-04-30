@@ -287,6 +287,14 @@
                                 <color key="textColor" red="0.87716564119999996" green="0.01331189114" blue="0.28797959109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4P-U8-8lv">
+                                <rect key="frame" x="170" y="391" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Time"/>
+                                <connections>
+                                    <action selector="getTimeBTN:" destination="RlD-sm-pSw" eventType="touchUpInside" id="xe9-SU-bH3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0Mp-Jg-c3H"/>

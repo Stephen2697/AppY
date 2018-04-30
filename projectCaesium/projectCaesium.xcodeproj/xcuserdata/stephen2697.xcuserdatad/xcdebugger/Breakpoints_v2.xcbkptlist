@@ -56,7 +56,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectCaesium/FoodItemTableViewController.swift"
-            timestampString = "546774896.97568"
+            timestampString = "546783757.606564"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "194"
@@ -72,7 +72,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectCaesium/FoodItemTableViewController.swift"
-            timestampString = "546774896.976101"
+            timestampString = "546783757.606981"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "189"
@@ -88,7 +88,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectCaesium/FoodItemTableViewController.swift"
-            timestampString = "546774896.976319"
+            timestampString = "546783757.607219"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "185"
@@ -104,11 +104,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectCaesium/FoodItem.swift"
-            timestampString = "546774896.976526"
+            timestampString = "546783757.607433"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "init(Time:Gram:Name:Photo:Carbs:Fats:Proteins:Kcals:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -152,11 +152,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectCaesium/AddFoodViewController.swift"
-            timestampString = "546774896.976855"
+            timestampString = "546783757.607968"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
+            startingLineNumber = "203"
+            endingLineNumber = "203"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -168,7 +168,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectCaesium/DashCollectionViewCell.swift"
-            timestampString = "546774896.977109"
+            timestampString = "546783757.6085761"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "12"
@@ -184,7 +184,7 @@
                   moduleName = "123"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/stephen2697/Desktop/AppY/projectCaesium/projectCaesium/DashCollectionViewCell.swift"
-                  timestampString = "546774897.158942"
+                  timestampString = "546783757.9497451"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -199,7 +199,7 @@
                   moduleName = "123"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/stephen2697/Desktop/AppY/projectCaesium/projectCaesium/DashCollectionViewCell.swift"
-                  timestampString = "546774897.16162"
+                  timestampString = "546783757.952999"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "12"
@@ -214,7 +214,7 @@
                   moduleName = "123"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/stephen2697/Desktop/AppY/projectCaesium/projectCaesium/DashCollectionViewCell.swift"
-                  timestampString = "546774897.164672"
+                  timestampString = "546783757.956394"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -229,7 +229,7 @@
                   moduleName = "123"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/stephen2697/Desktop/AppY/projectCaesium/projectCaesium/DashCollectionViewCell.swift"
-                  timestampString = "546774897.16794"
+                  timestampString = "546783757.959522"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "12"
@@ -246,12 +246,92 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectCaesium/DashCollectionViewController.swift"
-            timestampString = "546774896.977154"
+            timestampString = "546783757.608644"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
             endingLineNumber = "20"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "projectCaesium/File.swift"
+            timestampString = "546783757.609413"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "getTodayString()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "projectCaesium/File.swift"
+            timestampString = "546783757.60966"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "getTodayString()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "projectCaesium/File.swift"
+            timestampString = "546783757.609858"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "getTodayString()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "projectCaesium/AddFoodViewController.swift"
+            timestampString = "546783757.610057"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "projectCaesium/AddFoodViewController.swift"
+            timestampString = "546783757.610284"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "194"
+            endingLineNumber = "194"
+            landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

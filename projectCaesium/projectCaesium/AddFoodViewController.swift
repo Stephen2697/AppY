@@ -185,8 +185,14 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
         
         //Memory Assignments - take user input as constants
         //(??) unrwaps the optional string returned - if nil is returned an empty string ("") is returned.
-//        let foodPhoto = photoImageView.image
-        let Time = "20.00" //replace with action time
+        //let Time: Date = Date() //replace with action time
+        
+        
+        let formatter = DateFormatter()
+        formatter.setLocalizedDateFormatFromTemplate("dd/MM/yy, HH:mm:ss")
+        let Time = formatter.string(from: Date())
+        
+        print("This date: [\(formatter.string(from: Date()))]" )
         
         let Gram: Float? = Float(portionBox.text!)
         let Name = mealNameBox.text ?? ""
@@ -198,13 +204,14 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
         
         
         
-        //Configure the new FoodItem object to be passed to MealTableViewController by calling FoodItem's initialiser
+        //Configure the new FoodItem object to be passed to FoodItemTableViewController by calling FoodItem's initialiser
         
         newFoodItem = FoodItem(Time:Time, Gram: Gram!, Name: Name, Photo: Photo, Carbs: Carbs!, Fats: Fats!, Proteins: Proteins!, Kcals: Kcals!)
     }
     
     //MARK: Private Functions
-    private func disableSaveOptNoText() {
+    private func disableSaveOptNoText()
+    {
         // Disable the Save button if the text field is empty.
         let mealName = mealNameBox.text ?? ""
         let portion = portionBox.text ?? ""

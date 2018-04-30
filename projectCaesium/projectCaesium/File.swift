@@ -16,32 +16,27 @@ class TimeX {
     init? (enter: String)
     {
         
-        self.today = getTodayString()
-        print("Date string: \(self.today)")
+        getTodayString()
+        
         
     }
     
     
     
-    func getTodayString() -> String
+    func getTodayString()
     {
+        //get date
+        let date: Date = Date()
         
-        let date = Date()
+        //format date
         let calender = Calendar.current
         let components = calender.dateComponents([.year,.month,.day,.hour,.minute,.second], from: date)
         
-        let year = components.year
-        let month = components.month
-        let day = components.day
-        let hour = components.hour
-        let minute = components.minute
-        let second = components.second
-        
-        let today_string = String(year!) + "-" + String(month!) + "-" + String(day!) + " " + String(hour!)  + ":" + String(minute!) + ":" +  String(second!)
-        
-        return today_string
+        let todayArray = ["Year": components.year, "Month": components.month, "Day": components.day, "Hour": components.hour, "Minute": components.minute, "Second": components.second]
         
     }
+    
+    
     
     
 

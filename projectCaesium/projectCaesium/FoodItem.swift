@@ -1,6 +1,5 @@
 //
-//  Meal.swift
-
+//  FoodItem.swift
 //
 //  Created by Stephen Alger.
 //  Copyright © 2018 Stephen Alger. All rights reserved.
@@ -14,7 +13,7 @@ class FoodItem: NSObject, NSCoding
     
 
     //MARK: Food Variables
-    var LogTime: String
+    var LogTime: Date
     var gramSize: Float
     var foodName: String
     var foodPhoto: UIImage
@@ -24,14 +23,6 @@ class FoodItem: NSObject, NSCoding
     var foodCalories: Int
     var actCalories: Float
     var expCalories: Float
-    
-    //MARK: Archive Path
-    //static as these constants belong to the class not instances of the class
-//    The DocumentsDirectory constant looks up the URL for your app’s documents directory where the saved data is located. It returns an array of URLs - the first parameter returns the first URL in the array.
-    static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
-    
-    //Now we append foodItems to this URL to create an access point to this apps data
-    static let ArchiveURL = DocumentsDirectory.appendingPathComponent("foodItems")
     
     //MARK: Encode/Decode Struct Properties
     //static as these constants belong to the structure itself and not its instances (e.g. PropertyKey.LogTime)
@@ -48,9 +39,10 @@ class FoodItem: NSObject, NSCoding
 //        static let aCalories = "aCalories"
 //        static let eCalories = "eCalories"
     } //end struct
+
     
     //MARK: Initialisation
-    init?(Time:String, Gram: Float, Name: String, Photo: UIImage?, Carbs: Float, Fats: Float, Proteins: Float, Kcals: Int)
+    init?(Time:Date, Gram: Float, Name: String, Photo: UIImage?, Carbs: Float, Fats: Float, Proteins: Float, Kcals: Int)
     {
         
         
@@ -59,18 +51,26 @@ class FoodItem: NSObject, NSCoding
         self.foodName = Name
         self.gramSize = Gram
         self.foodPhoto = Photo!
-        self.foodCarbs = Carbs
-        self.foodFats = Fats
-        self.foodProteins = Proteins
+        self.foodCarbs = (Carbs*((Gram)/100.00))
+        self.foodFats = (Fats*((Gram)/100.00))
+        self.foodProteins = (Proteins*((Gram)/100.00))
         self.foodCalories = Kcals
         self.actCalories = ((Float(Kcals))*((Gram)/100.00))
         //debugging
-        self.expCalories = 500.00
+        self.expCalories = (self.foodFats*9)+(self.foodProteins*4)+(self.foodCarbs*4)
         print("Total Cals: \(self.actCalories)")
         print("Expected Calories is \(self.expCalories)")
         
 
     }//end initialisation
+    
+    //MARK: Archive Path
+    //static as these constants belong to the class not instances of the class
+    //The DocumentsDirectory constant looks up the URL for your app’s documents directory where the saved data is located. It returns an array of URLs - the first parameter returns the first URL in the array.
+    static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
+    
+    //Now we append foodItems to this URL to create an access point to this apps data
+    static let ArchiveURL = DocumentsDirectory.appendingPathComponent("foodItems")
     
     //MARK: NSCoding
     func encode(with aCoder: NSCoder) {
@@ -100,8 +100,8 @@ convenience modifier states that this is a secondary initializer.*/
             return nil
         }
         
-        //String downcast required..
-        let Time = aDecoder.decodeObject(forKey: PropertyKey.Time) as? String
+        //Date downcast required..
+        let Time = aDecoder.decodeObject(forKey: PropertyKey.Time) as? Date
         
         //downcast returned value by decodeObject() to type UIImage, which is a conditional anyway so there is no issue if nil is returned.
         let Photo = aDecoder.decodeObject(forKey: PropertyKey.Photo) as? UIImage

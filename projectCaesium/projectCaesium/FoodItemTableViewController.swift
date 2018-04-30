@@ -16,6 +16,9 @@ class FoodItemTableViewController: UITableViewController {
     //create array of objects of class type: foodItem
     var foodItems = [FoodItem]()
     
+    //track kcals
+    var kcalCounter: Float = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        setupNavBar()
@@ -158,9 +161,12 @@ class FoodItemTableViewController: UITableViewController {
         cell.proteinLabel.text = "Pro: \(String(format: "%.0f", foodItem.foodProteins))g"
         cell.fatLabel.text = "Fat: \(String(format: "%.0f", foodItem.foodFats))g"
         
-        
+        kcalCounter += foodItem.actCalories
+        print("KC: \(kcalCounter)")
         return cell
     }
+    
+    
  
     //MARK: Actions
     //dealing with unwinding from Add Food View to Food Table View
@@ -220,36 +226,49 @@ class FoodItemTableViewController: UITableViewController {
     {
         
         //load in food images
-//        let photo1 = UIImage(named: "Sample1")
-//        let photo2 = UIImage(named: "Sample2")
-//        let photo3 = UIImage(named: "Sample3")
-//        let photo4 = UIImage(named: "Sample4")
-//        let photo5 = UIImage(named: "Sample5")
+        let photo1 = UIImage(named: "Sample1")
+        let photo2 = UIImage(named: "Sample2")
+        let photo3 = UIImage(named: "Sample3")
+        let photo4 = UIImage(named: "Sample4")
+        let photo5 = UIImage(named: "Sample5")
         
-//        guard let foodOne = FoodItem(Time: "20.30", Gram: 100.00, Name: "Crisps & Dip", Photo: photo1, Carbs: 30.02, Fats: 15.05, Proteins: 5.1, Kcals: 200) else {
-//            fatalError("Unable to instantiate foodOne")
-//        }
-//
-//
-//        guard let foodTwo = FoodItem(Time: "21.30", Gram: 300.00, Name: "Burger", Photo: photo2, Carbs: 5.1, Fats: 29.9, Proteins: 24.4, Kcals: 377) else {
-//            fatalError("Unable to instantiate foodTwo")
-//        }
-//
-//        guard let foodThree = FoodItem(Time: "22.30", Gram: 50.00, Name: "Caesar Salad", Photo: photo3, Carbs: 6.9, Fats: 8.9, Proteins: 10.1, Kcals: 205) else {
-//            fatalError("Unable to instantiate foodThree")
-//        }
-//
-//        guard let foodFour = FoodItem(Time: "23.30", Gram: 500.00, Name: "Pepper Steak", Photo: photo4, Carbs: 5.2, Fats: 29.3, Proteins: 24.4, Kcals: 377) else {
-//            fatalError("Unable to instantiate foodFour")
-//        }
-//
-//        guard let foodFive = FoodItem(Time: "23.32", Gram: 50.00, Name: "Mixed Fruit Dessert", Photo: photo5, Carbs: 30, Fats: 0, Proteins: 3, Kcals: 132) else {
-//            fatalError("Unable to instantiate foodFive")
-//        }
+        //create sample date
+        let calendar = Calendar.current
+        
+        var components = DateComponents()
+        
+        components.day = 30
+        components.month = 4
+        components.year = 2018
+        components.hour = 15
+        components.minute = 15
+        
+        let newDate = calendar.date(from: components)
+        
+        guard let foodOne = FoodItem(Time: newDate!, Gram: 100.00, Name: "Crisps & Dip", Photo: photo1, Carbs: 30.02, Fats: 15.05, Proteins: 5.1, Kcals: 200) else {
+            fatalError("Unable to instantiate foodOne")
+        }
+
+
+        guard let foodTwo = FoodItem(Time: newDate!, Gram: 300.00, Name: "Burger", Photo: photo2, Carbs: 5.1, Fats: 29.9, Proteins: 24.4, Kcals: 377) else {
+            fatalError("Unable to instantiate foodTwo")
+        }
+
+        guard let foodThree = FoodItem(Time: newDate!, Gram: 50.00, Name: "Caesar Salad", Photo: photo3, Carbs: 6.9, Fats: 8.9, Proteins: 10.1, Kcals: 205) else {
+            fatalError("Unable to instantiate foodThree")
+        }
+
+        guard let foodFour = FoodItem(Time: newDate!, Gram: 500.00, Name: "Pepper Steak", Photo: photo4, Carbs: 5.2, Fats: 29.3, Proteins: 24.4, Kcals: 377) else {
+            fatalError("Unable to instantiate foodFour")
+        }
+
+        guard let foodFive = FoodItem(Time: newDate!, Gram: 50.00, Name: "Mixed Fruit Dessert", Photo: photo5, Carbs: 30, Fats: 0, Proteins: 3, Kcals: 132) else {
+            fatalError("Unable to instantiate foodFive")
+        }
         
         
         
-        //foodItems += [foodOne, foodTwo, foodThree, foodFour, foodFive]
+        foodItems += [foodOne, foodTwo, foodThree, foodFour, foodFive]
         
     } //end loadsample()
     

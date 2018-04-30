@@ -15,10 +15,14 @@ class DevViewController: UIViewController {
         getTime()
     }
     
+    @IBOutlet weak var kcalIndicator: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        setupNavBar()
-
+        
+        //kcalIndicator.text += " \(KcalCounter)"
         // Do any additional setup after loading the view.
     }
     

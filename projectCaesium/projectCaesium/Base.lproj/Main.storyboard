@@ -295,15 +295,25 @@
                                     <action selector="getTimeBTN:" destination="RlD-sm-pSw" eventType="touchUpInside" id="xe9-SU-bH3"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Calories Today Are:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07b-02-Z6s">
+                                <rect key="frame" x="16" y="483" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0Mp-Jg-c3H"/>
                     </view>
                     <navigationItem key="navigationItem" title="Developer Information" id="1A3-BZ-Ewc"/>
+                    <connections>
+                        <outlet property="kcalIndicator" destination="07b-02-Z6s" id="yfY-rd-PFx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYV-qU-67N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9" y="-816"/>
+            <point key="canvasLocation" x="8.8000000000000007" y="-816.50246305418727"/>
         </scene>
         <!--My Food Items-->
         <scene sceneID="ulP-Mb-BFu">

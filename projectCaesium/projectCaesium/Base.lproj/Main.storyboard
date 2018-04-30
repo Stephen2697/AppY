@@ -22,16 +22,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view verifyAmbiguity="off" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j2w-WO-18r">
-                                <rect key="frame" x="0.0" y="104" width="379.66666666666669" height="674"/>
+                                <rect key="frame" x="0.0" y="104" width="375" height="674"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="5mG-ap-59i">
-                                        <rect key="frame" x="24" y="8" width="331.66666666666669" height="655.33333333333337"/>
+                                        <rect key="frame" x="24" y="8" width="327" height="655.33333333333337"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="RNV-Ey-VN9">
-                                                <rect key="frame" x="0.0" y="0.0" width="331.66666666666669" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="30"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3pF-xU-HDO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="331.66666666666669" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="327" height="30"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" keyboardAppearance="light" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="name"/>
@@ -43,7 +43,7 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="SKa-dX-GPg">
-                                                <rect key="frame" x="0.0" y="55.000000000000014" width="331.66666666666669" height="245.33333333333337"/>
+                                                <rect key="frame" x="0.0" y="55.000000000000014" width="327" height="245.33333333333337"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Nutritional Information Per 100g" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmJ-Fl-55P">
                                                         <rect key="frame" x="0.0" y="0.0" width="288" height="20.333333333333332"/>
@@ -52,16 +52,16 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tty-rb-caJ">
-                                                        <rect key="frame" x="0.0" y="35.333333333333343" width="331.33333333333331" height="30"/>
+                                                        <rect key="frame" x="0.0" y="35.333333333333343" width="326.66666666666669" height="30"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5A-5M-DGQ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="141.33333333333334" height="30"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="136.66666666666666" height="30"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Kcal" textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="wue-GE-NXO">
-                                                                <rect key="frame" x="141.33333333333334" y="0.0" width="190.00000000000003" height="30"/>
+                                                                <rect key="frame" x="136.66666666666666" y="0.0" width="189.99999999999997" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="190" id="Ddd-6W-7ea"/>
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="190" id="KKO-Ry-mKh"/>
@@ -173,7 +173,7 @@
                                                 </constraints>
                                             </stackView>
                                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="330" placeholderIntrinsicHeight="330" image="AD1" translatesAutoresizingMaskIntoConstraints="NO" id="6Sc-kr-m60">
-                                                <rect key="frame" x="0.0" y="325.33333333333331" width="331.66666666666669" height="329.99999999999994"/>
+                                                <rect key="frame" x="0.0" y="325.33333333333331" width="327" height="329.99999999999994"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="330" id="2HS-Gr-J35"/>
@@ -258,6 +258,22 @@
             </objects>
             <point key="canvasLocation" x="2801" y="-1550"/>
         </scene>
+        <!--Today-->
+        <scene sceneID="3Lk-FS-4L7">
+            <objects>
+                <viewController title="Today" id="tm4-AY-n6l" customClass="DashViewController" customModule="_23" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vWO-Ay-X1S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="o8H-m6-YiY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Today" id="9it-hl-HSb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Tg-XP-gjJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="-817"/>
+        </scene>
         <!--Developer Information-->
         <scene sceneID="rKY-ej-BC2">
             <objects>
@@ -295,15 +311,25 @@
                                     <action selector="getTimeBTN:" destination="RlD-sm-pSw" eventType="touchUpInside" id="xe9-SU-bH3"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Calories Today Are:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07b-02-Z6s">
+                                <rect key="frame" x="16" y="483" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0Mp-Jg-c3H"/>
                     </view>
                     <navigationItem key="navigationItem" title="Developer Information" id="1A3-BZ-Ewc"/>
+                    <connections>
+                        <outlet property="kcalIndicator" destination="07b-02-Z6s" id="yfY-rd-PFx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYV-qU-67N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9" y="-816"/>
+            <point key="canvasLocation" x="8.8000000000000007" y="-816.50246305418727"/>
         </scene>
         <!--My Food Items-->
         <scene sceneID="ulP-Mb-BFu">
@@ -398,12 +424,12 @@
         <!--Today-->
         <scene sceneID="tIn-vc-Hil">
             <objects>
-                <collectionViewController id="0EH-ej-OGj" customClass="DashCollectionViewController" customModule="_23" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="0EH-ej-OGj" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Today" largeTitleDisplayMode="always" id="Yc8-34-yv9"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x7M-9w-phv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="913" y="-817"/>
+            <point key="canvasLocation" x="4284" y="-817"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ew2-QZ-8xX">
@@ -498,7 +524,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="0EH-ej-OGj" kind="relationship" relationship="rootViewController" id="o9b-dw-of0"/>
+                        <segue destination="tm4-AY-n6l" kind="relationship" relationship="rootViewController" id="dNk-GX-vpm"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T15-A3-93s" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -1,43 +1,19 @@
 //
-//  DevViewController.swift
+//  DashViewController.swift
 //  123
 //
-//  Created by Stephen Alger on 26/04/2018.
+//  Created by Stephen Alger on 30/04/2018.
 //  Copyright © 2018 Stephen Alger. All rights reserved.
 //
 
 import UIKit
 
-class DevViewController: UIViewController {
+class DashViewController: UIViewController {
 
-    @IBAction func getTimeBTN(_ sender: UIButton)
-    {
-        getTime()
-        kcalIndicator.text = String(Count.kcalCounter)
-    }
-    
-    @IBOutlet weak var kcalIndicator: UILabel!
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        setupNavBar()
-        
-       
+        setupNavBar()
         // Do any additional setup after loading the view.
-    }
-
-
-    
-    func getTime()
-    {
-        var enterString: String = ""
-        
-        
-        //create instance of TimeX
-        let instTime = TimeX.init(enter: enterString)
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,11 +21,12 @@ class DevViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    //configure ios11 style nav bar with preferLargeTitles boolean attribute setu to true
+    //adopt ios11 nav bar effect
     func setupNavBar()
     {
         navigationController?.navigationBar.prefersLargeTitles = true
     }
+    
 
     /*
     // MARK: - Navigation

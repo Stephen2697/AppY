@@ -56,19 +56,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectCaesium/FoodItemTableViewController.swift"
-<<<<<<< HEAD
-            timestampString = "546792770.880916"
+            timestampString = "546796680.461695"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "199"
             endingLineNumber = "199"
-=======
-            timestampString = "546783757.606564"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "194"
-            endingLineNumber = "194"
->>>>>>> parent of 7fec8f3... Added Calorie Counting
             landmarkName = "unwindToFoodItemList(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -80,19 +72,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectCaesium/FoodItemTableViewController.swift"
-<<<<<<< HEAD
-            timestampString = "546792770.881461"
+            timestampString = "546796680.462235"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "194"
             endingLineNumber = "194"
-=======
-            timestampString = "546783757.606981"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
->>>>>>> parent of 7fec8f3... Added Calorie Counting
             landmarkName = "unwindToFoodItemList(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -104,19 +88,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectCaesium/FoodItemTableViewController.swift"
-<<<<<<< HEAD
-            timestampString = "546792770.881845"
+            timestampString = "546796680.4625289"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "190"
             endingLineNumber = "190"
-=======
-            timestampString = "546783757.607219"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
->>>>>>> parent of 7fec8f3... Added Calorie Counting
             landmarkName = "unwindToFoodItemList(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -128,15 +104,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectCaesium/FoodItem.swift"
-<<<<<<< HEAD
-            timestampString = "546792770.882251"
-=======
-            timestampString = "546783757.607433"
->>>>>>> parent of 7fec8f3... Added Calorie Counting
+            timestampString = "546796680.462819"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "init(Time:Gram:Name:Photo:Carbs:Fats:Proteins:Kcals:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -180,15 +152,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectCaesium/AddFoodViewController.swift"
-<<<<<<< HEAD
             timestampString = "546792770.882563"
-=======
-            timestampString = "546783757.607968"
->>>>>>> parent of 7fec8f3... Added Calorie Counting
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "203"
-            endingLineNumber = "203"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -200,95 +168,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectCaesium/DashCollectionViewCell.swift"
-<<<<<<< HEAD
             timestampString = "546792770.882622"
-=======
-            timestampString = "546783757.6085761"
->>>>>>> parent of 7fec8f3... Added Calorie Counting
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "12"
             endingLineNumber = "12"
             landmarkName = "DashCollectionViewCell"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "_23.DashCollectionViewCell.__allocating_init(frame: __C.CGRect) -&gt; _23.DashCollectionViewCell"
-                  moduleName = "123"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/stephen2697/Desktop/AppY/projectCaesium/projectCaesium/DashCollectionViewCell.swift"
-<<<<<<< HEAD
-                  timestampString = "546792771.1004519"
-=======
-                  timestampString = "546783757.9497451"
->>>>>>> parent of 7fec8f3... Added Calorie Counting
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "_23.DashCollectionViewCell.init(frame: __C.CGRect) -&gt; _23.DashCollectionViewCell"
-                  moduleName = "123"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/stephen2697/Desktop/AppY/projectCaesium/projectCaesium/DashCollectionViewCell.swift"
-<<<<<<< HEAD
-                  timestampString = "546792771.1031719"
-=======
-                  timestampString = "546783757.952999"
->>>>>>> parent of 7fec8f3... Added Calorie Counting
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "186">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "_23.DashCollectionViewCell.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;_23.DashCollectionViewCell&gt;"
-                  moduleName = "123"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/stephen2697/Desktop/AppY/projectCaesium/projectCaesium/DashCollectionViewCell.swift"
-<<<<<<< HEAD
-                  timestampString = "546792771.105755"
-=======
-                  timestampString = "546783757.956394"
->>>>>>> parent of 7fec8f3... Added Calorie Counting
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "_23.DashCollectionViewCell.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;_23.DashCollectionViewCell&gt;"
-                  moduleName = "123"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/stephen2697/Desktop/AppY/projectCaesium/projectCaesium/DashCollectionViewCell.swift"
-<<<<<<< HEAD
-                  timestampString = "546792771.107679"
-=======
-                  timestampString = "546783757.959522"
->>>>>>> parent of 7fec8f3... Added Calorie Counting
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "124">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -298,11 +184,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectCaesium/DashCollectionViewController.swift"
-<<<<<<< HEAD
-            timestampString = "546792770.882664"
-=======
-            timestampString = "546783757.608644"
->>>>>>> parent of 7fec8f3... Added Calorie Counting
+            timestampString = "546795460.617431"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -318,11 +200,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectCaesium/File.swift"
-<<<<<<< HEAD
-            timestampString = "546792770.883121"
-=======
-            timestampString = "546783757.609413"
->>>>>>> parent of 7fec8f3... Added Calorie Counting
+            timestampString = "546796680.463093"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
@@ -338,11 +216,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectCaesium/File.swift"
-<<<<<<< HEAD
-            timestampString = "546792770.883433"
-=======
-            timestampString = "546783757.60966"
->>>>>>> parent of 7fec8f3... Added Calorie Counting
+            timestampString = "546796680.463429"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "34"
@@ -358,11 +232,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectCaesium/File.swift"
-<<<<<<< HEAD
-            timestampString = "546792770.8837121"
-=======
-            timestampString = "546783757.609858"
->>>>>>> parent of 7fec8f3... Added Calorie Counting
+            timestampString = "546796680.463706"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
@@ -378,31 +248,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "projectCaesium/AddFoodViewController.swift"
-<<<<<<< HEAD
             timestampString = "546792770.883932"
-=======
-            timestampString = "546783757.610057"
->>>>>>> parent of 7fec8f3... Added Calorie Counting
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "187"
             endingLineNumber = "187"
-            landmarkName = "prepare(for:sender:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "projectCaesium/AddFoodViewController.swift"
-            timestampString = "546783757.610284"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "194"
-            endingLineNumber = "194"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>

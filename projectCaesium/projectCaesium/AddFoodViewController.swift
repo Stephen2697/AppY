@@ -40,7 +40,8 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
         self.fatBox.delegate = self
         
         //If we are editing, then fill the textboxes with the existing object properties
-        if let foodItem = newFoodItem {
+        if let foodItem = newFoodItem
+        {
             navigationItem.title = foodItem.foodName
             mealNameBox.text   = foodItem.foodName
             addPhotoImage.image = foodItem.foodPhoto
@@ -194,7 +195,19 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
 //        let Time = formatter.string(from: Date())
 //
 //        print("This date: [\(formatter.string(from: Date()))]" )
-//        
+        
+//        var numberFormatter = NumberFormatter()
+        
+//        numberFormatter.maximumFractionDigits = 2
+        //numberFormatter.string(from: Float(portionBox.text!))
+        //NSNumber(value:myInteger)
+        //constrain input
+//        let conGram = numberFormatter.string(from: NSNumber(value: Float(portionBox.text!)!))
+//
+//        let numberFormatter2 = NumberFormatter()
+//        numberFormatter2.numberStyle = NumberFormatter.Style.DecimalStyle
+//        let number = numberFormatter.number(from: conGram!)
+        
         let Gram: Float? = Float(portionBox.text!)
         let Name = mealNameBox.text ?? ""
         let Photo = addPhotoImage.image
@@ -202,6 +215,9 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
         let Fats: Float? = Float(fatBox.text!)
         let Proteins: Float? = Float(proteinBox.text!)
         let Kcals: Int? = Int(caloriesBox.text!)
+        
+        
+        
         
         
         

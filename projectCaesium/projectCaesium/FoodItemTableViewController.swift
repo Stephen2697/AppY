@@ -16,7 +16,7 @@ class FoodItemTableViewController: UITableViewController {
     //create array of objects of class type: foodItem
     var foodItems = [FoodItem]()
     
-    
+    let formatter = DateFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -135,34 +135,35 @@ class FoodItemTableViewController: UITableViewController {
         //return a single row for every food object in the 'foodItems' array.
         return foodItems.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        //setup date format
+        formatter.setLocalizedDateFormatFromTemplate("dd/MM/yy")
         
         // Table view cells are reused and should be dequeued using a cell identifier.
         let cellIdentifier = "FoodItemTableViewCell"
         
         //We perform a downcasting on the returned object from the UITableViewCell class to our FoodItemTableViewCell by using 'as?'. We then use the 'guard let' expression to safely unwrap the optional just returned.
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? FoodItemTableViewCell  else {
-            fatalError("The dequeued cell is not an instance of FoodItemTableViewCell.")
-        }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? FoodItemTableViewCell
+            else
+            {
+                fatalError("The dequeued cell is not an instance of FoodItemTableViewCell.")
+            }
         
         //Get the corresponding foodItem for the data source layout.
+
         let foodItem = foodItems[indexPath.row]
         
+        let relativeSize = (foodItem.gramSize/100.00)
 
-
-        
         cell.nameLabel.text = foodItem.foodName
         cell.cellImage.image = foodItem.foodPhoto
         cell.kcalLabel.text =   "Kcals: \(String(format: "%.0f", foodItem.actCalories))"
-        cell.carbLabel.text = "Car: \(String(format: "%.0f", foodItem.foodCarbs))g"
-        cell.proteinLabel.text = "Pro: \(String(format: "%.0f", foodItem.foodProteins))g"
-        cell.fatLabel.text = "Fat: \(String(format: "%.0f", foodItem.foodFats))g"
+        cell.carbLabel.text = "Car: \(String(format: "%.0f", foodItem.foodCarbs*relativeSize))g"
+        cell.proteinLabel.text = "Pro: \(String(format: "%.0f", foodItem.foodProteins*relativeSize))g"
+        cell.fatLabel.text = "Fat: \(String(format: "%.0f", foodItem.foodFats*relativeSize))g"
         
-        let formatter = DateFormatter()
-        formatter.setLocalizedDateFormatFromTemplate("dd/MM/yy")
-        //let Time = formatter.string(from: Date())
         
         cell.dateLabel.text = "\(formatter.string(from: foodItem.LogTime))"
         
@@ -250,24 +251,24 @@ class FoodItemTableViewController: UITableViewController {
         
         let newDate = calendar.date(from: components)
         
-        guard let foodOne = FoodItem(Time: newDate!, Gram: 100.00, Name: "Crisps & Dip", Photo: photo1, Carbs: 30.02, Fats: 15.05, Proteins: 5.1, Kcals: 200) else {
+        guard let foodOne = FoodItem(Time: newDate!, Gram: 100.00, Name: "Crisps & Dip", Photo: photo1, Carbs: 30.20, Fats: 15.50, Proteins: 5.10, Kcals: 200) else {
             fatalError("Unable to instantiate foodOne")
         }
 
 
-        guard let foodTwo = FoodItem(Time: newDate!, Gram: 300.00, Name: "Burger", Photo: photo2, Carbs: 5.1, Fats: 29.9, Proteins: 24.4, Kcals: 377) else {
+        guard let foodTwo = FoodItem(Time: newDate!, Gram: 300.00, Name: "Burger", Photo: photo2, Carbs: 5.10, Fats: 29.90, Proteins: 24.40, Kcals: 377) else {
             fatalError("Unable to instantiate foodTwo")
         }
 
-        guard let foodThree = FoodItem(Time: newDate!, Gram: 50.00, Name: "Caesar Salad", Photo: photo3, Carbs: 6.9, Fats: 8.9, Proteins: 10.1, Kcals: 205) else {
+        guard let foodThree = FoodItem(Time: newDate!, Gram: 50.00, Name: "Caesar Salad", Photo: photo3, Carbs: 6.90, Fats: 8.90, Proteins: 10.10, Kcals: 205) else {
             fatalError("Unable to instantiate foodThree")
         }
 
-        guard let foodFour = FoodItem(Time: newDate!, Gram: 500.00, Name: "Pepper Steak", Photo: photo4, Carbs: 5.2, Fats: 29.3, Proteins: 24.4, Kcals: 377) else {
+        guard let foodFour = FoodItem(Time: newDate!, Gram: 500.00, Name: "Pepper Steak", Photo: photo4, Carbs: 5.20, Fats: 29.30, Proteins: 24.40, Kcals: 377) else {
             fatalError("Unable to instantiate foodFour")
         }
 
-        guard let foodFive = FoodItem(Time: newDate!, Gram: 50.00, Name: "Mixed Fruit Dessert", Photo: photo5, Carbs: 30, Fats: 0, Proteins: 3, Kcals: 132) else {
+        guard let foodFive = FoodItem(Time: newDate!, Gram: 50.00, Name: "Mixed Fruit Dessert", Photo: photo5, Carbs: 30.00, Fats: 0.00, Proteins: 3.00, Kcals: 132) else {
             fatalError("Unable to instantiate foodFive")
         }
         

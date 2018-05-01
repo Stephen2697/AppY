@@ -23,7 +23,7 @@ class FoodItem: NSObject, NSCoding
     var foodCalories: Int
     var actCalories: Float
     var expCalories: Float
-//    var day, month, year : Int
+
 
     
     //MARK: Encode/Decode Struct Properties
@@ -53,11 +53,11 @@ class FoodItem: NSObject, NSCoding
         self.foodName = Name
         self.gramSize = Gram
         self.foodPhoto = Photo!
-        self.foodCarbs = (Carbs*((Gram)/100.00))
-        self.foodFats = (Fats*((Gram)/100.00))
-        self.foodProteins = (Proteins*((Gram)/100.00))
+        self.foodCarbs = Carbs
+        self.foodFats = Fats
+        self.foodProteins = Proteins
         self.foodCalories = Kcals
-        self.actCalories = ((Float(Kcals))*((Gram)/100.00))
+        self.actCalories = ((Float(Kcals))*((Gram)/100))
         //debugging
         self.expCalories = (self.foodFats*9)+(self.foodProteins*4)+(self.foodCarbs*4)
         print("Total Cals: \(self.actCalories)")

@@ -57,12 +57,12 @@ open class PieChartView: PieRadarChartViewBase
     /// indicates the size of the hole in the center of the piechart
     ///
     /// **default**: `0.5`
-    private var _holeRadiusPercent = CGFloat(0.5)
+    private var _holeRadiusPercent = CGFloat(0.3)
     
     private var _transparentCircleColor: NSUIColor? = NSUIColor(white: 1.0, alpha: 105.0/255.0)
     
     /// the radius of the transparent circle next to the chart-hole in the center
-    private var _transparentCircleRadiusPercent = CGFloat(0.55)
+    private var _transparentCircleRadiusPercent = CGFloat(0.35)
     
     /// if enabled, centertext is drawn
     private var _drawCenterTextEnabled = true

@@ -20,7 +20,12 @@ class FoodItemTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        setupNavBar()
+        
+        Count.kcalCounter = 0
+        Count.carbCounter = 0
+        Count.fatCounter = 0
+        Count.proteinCounter = 0
+        
         
         //Manually add an edit button with the required abilities pre-baked!
         navigationItem.leftBarButtonItem = editButtonItem

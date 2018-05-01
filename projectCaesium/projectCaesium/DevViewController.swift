@@ -12,7 +12,7 @@ class DevViewController: UIViewController {
 
     @IBAction func getTimeBTN(_ sender: UIButton)
     {
-        getTime()
+        
         kcalIndicator.text = String(Count.kcalCounter)
     }
     
@@ -26,18 +26,6 @@ class DevViewController: UIViewController {
         
        
         // Do any additional setup after loading the view.
-    }
-
-
-    
-    func getTime()
-    {
-        var enterString: String = ""
-        
-        
-        //create instance of TimeX
-        let instTime = TimeX.init(enter: enterString)
-        
     }
 
     override func didReceiveMemoryWarning() {

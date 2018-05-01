@@ -18,13 +18,9 @@ class FoodItemTableViewController: UITableViewController {
     
     let formatter = DateFormatter()
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        
-        Count.kcalCounter = 0
-        Count.carbCounter = 0
-        Count.fatCounter = 0
-        Count.proteinCounter = 0
         
         
         //Manually add an edit button with the required abilities pre-baked!
@@ -174,10 +170,6 @@ class FoodItemTableViewController: UITableViewController {
         
         cell.dateLabel.text = "\(formatter.string(from: foodItem.LogTime))"
         
-        Count.kcalCounter += foodItem.actCalories
-        Count.carbCounter += foodItem.foodCarbs*relativeSize
-        Count.fatCounter += foodItem.foodFats*relativeSize
-        Count.proteinCounter += foodItem.foodProteins*relativeSize
         print("KC: \(Count.kcalCounter)")
         return cell
     }

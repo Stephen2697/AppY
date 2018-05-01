@@ -12,6 +12,7 @@ import Charts
 class DashViewController: UIViewController {
 
     @IBOutlet weak var pieChart: PieChartView!
+    var arrayWithoutData = [FoodItem]()
     
     var carbDataEntry = PieChartDataEntry(value: 0)
     var fatDataEntry = PieChartDataEntry(value: 0)
@@ -22,8 +23,15 @@ class DashViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //access, decode and count macros in foodItems array
+        countMacros()
+        
         setupNavBar()
         // Do any additional setup after loading the view.
+        
+        
+        
         
         pieChart.chartDescription?.text = ""
         
@@ -74,6 +82,34 @@ class DashViewController: UIViewController {
         pieChart.data = chartData
         
         
+    }
+    
+    //Method returns either nil or an array of FoodItem objects
+    private func loadEntries() -> [FoodItem]?
+    {
+        //return object from memory location and downcast to an array of FoodItem objects
+        return NSKeyedUnarchiver.unarchiveObject(withFile: FoodItem.ArchiveURL.path) as? [FoodItem]
+    }
+    
+    func countMacros()
+    {
+        Count.kcalCounter = 0
+        Count.carbCounter = 0
+        Count.fatCounter = 0
+        Count.proteinCounter = 0
+        
+        let foodItems = loadEntries()
+        
+        for foodItem in foodItems!
+        {
+            
+            let relativeSize = (foodItem.gramSize/100.00)
+            
+            Count.kcalCounter += foodItem.actCalories
+            Count.carbCounter += foodItem.foodCarbs*relativeSize
+            Count.fatCounter += foodItem.foodFats*relativeSize
+            Count.proteinCounter += foodItem.foodProteins*relativeSize
+        }
     }
 
     /*

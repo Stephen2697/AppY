@@ -7,13 +7,42 @@
 //
 
 import UIKit
+import Charts
 
 class DashViewController: UIViewController {
 
+    @IBOutlet weak var pieChart: PieChartView!
+    
+    var carbDataEntry = PieChartDataEntry(value: 0)
+    var fatDataEntry = PieChartDataEntry(value: 0)
+    var proteinDataEntry = PieChartDataEntry(value: 0)
+    //let relativeDivisor = (Count.carbCounter + Count.fatCounter + Count.proteinCounter)
+    
+    var macroRatioDataEntries = [PieChartDataEntry]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavBar()
         // Do any additional setup after loading the view.
+        
+        pieChart.chartDescription?.text = ""
+        
+        
+        carbDataEntry.value = Double(Count.carbCounter)
+        carbDataEntry.label = "Fats"
+        
+        fatDataEntry.value = Double(Count.fatCounter)
+        fatDataEntry.label = "Carbs"
+        
+        proteinDataEntry.value = Double(Count.proteinCounter)
+        proteinDataEntry.label = "Protein"
+        
+        macroRatioDataEntries = [fatDataEntry, carbDataEntry, proteinDataEntry]
+        
+        updateChartData()
+        
+        pieChart.layer.cornerRadius = 20
+        pieChart.layer.backgroundColor = (UIColor(red: 115, green: 115, blue: 115, alpha: 1) as! CGColor) 
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,9 +53,24 @@ class DashViewController: UIViewController {
     //adopt ios11 nav bar effect
     func setupNavBar()
     {
+        navigationItem.title = "Today: \(String(format: "%.0f", Count.kcalCounter))Kcal"
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     
+    func updateChartData() {
+        
+        let chartDataSet = PieChartDataSet(values: macroRatioDataEntries, label: nil)
+        
+        let chartData = PieChartData(dataSet: chartDataSet)
+        
+        let colors = [UIColor(named:"Fat"), UIColor(named:"Carb"), UIColor(named:"Protein")]
+        
+        chartDataSet.colors = colors as! [NSUIColor]
+        
+        pieChart.data = chartData
+        
+        
+    }
 
     /*
     // MARK: - Navigation

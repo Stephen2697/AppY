@@ -98,8 +98,10 @@ class FoodItemTableViewController: UITableViewController {
     {
         if editingStyle == .delete
         {
+            
             //Delete selected row from the array of food objects
             foodItems.remove(at: indexPath.row)
+            
             
             //save object array
             saveEntry()
@@ -168,6 +170,9 @@ class FoodItemTableViewController: UITableViewController {
         cell.dateLabel.text = "\(formatter.string(from: foodItem.LogTime))"
         
         Count.kcalCounter += foodItem.actCalories
+        Count.carbCounter += foodItem.foodCarbs*relativeSize
+        Count.fatCounter += foodItem.foodFats*relativeSize
+        Count.proteinCounter += foodItem.foodProteins*relativeSize
         print("KC: \(Count.kcalCounter)")
         return cell
     }
@@ -199,6 +204,7 @@ class FoodItemTableViewController: UITableViewController {
                 //add this food item to the food array
                 foodItems.append(food)
                 tableView.insertRows(at: [newIndexPath], with: .automatic)
+                
             }
             
             //save the foodItems array

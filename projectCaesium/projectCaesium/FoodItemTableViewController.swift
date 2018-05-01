@@ -160,6 +160,12 @@ class FoodItemTableViewController: UITableViewController {
         cell.proteinLabel.text = "Pro: \(String(format: "%.0f", foodItem.foodProteins))g"
         cell.fatLabel.text = "Fat: \(String(format: "%.0f", foodItem.foodFats))g"
         
+        let formatter = DateFormatter()
+        formatter.setLocalizedDateFormatFromTemplate("dd/MM/yy")
+        //let Time = formatter.string(from: Date())
+        
+        cell.dateLabel.text = "\(formatter.string(from: foodItem.LogTime))"
+        
         Count.kcalCounter += foodItem.actCalories
         print("KC: \(Count.kcalCounter)")
         return cell

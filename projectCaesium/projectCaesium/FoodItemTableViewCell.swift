@@ -24,6 +24,8 @@ class FoodItemTableViewCell: UITableViewCell {
     
     @IBOutlet weak var fatLabel: UILabel!
     
+    @IBOutlet weak var dateLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

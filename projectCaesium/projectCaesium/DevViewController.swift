@@ -9,14 +9,6 @@
 import UIKit
 
 class DevViewController: UIViewController {
-
-    @IBAction func getTimeBTN(_ sender: UIButton)
-    {
-        
-        kcalIndicator.text = String(Count.kcalCounter)
-    }
-    
-    @IBOutlet weak var kcalIndicator: UILabel!
     
     
     

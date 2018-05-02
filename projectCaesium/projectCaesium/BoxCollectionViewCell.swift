@@ -1,13 +1,11 @@
-//
 //  BoxCollectionViewCell.swift
-//  
-//
-//  Created by Stephen Alger on 25/04/2018.
-//
+//  Created by Stephen Alger.
+
 
 import UIKit
 
-class BoxCollectionViewCell: UICollectionViewCell {
-    
+class BoxCollectionViewCell: UICollectionViewCell
+{
+    //to be added
     
 }

@@ -1,8 +1,6 @@
-//
 //  DevViewController.swift
-//  123
 //
-//  Created by Stephen Alger on 26/04/2018.
+//  Created by Stephen Alger.
 //  Copyright © 2018 Stephen Alger. All rights reserved.
 //
 

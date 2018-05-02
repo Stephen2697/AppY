@@ -1,6 +1,4 @@
-//
 //  FoodItemTableViewCell.swift
-//
 //  Created by Stephen Alger
 //  Copyright © 2018 Stephen Alger. All rights reserved.
 //

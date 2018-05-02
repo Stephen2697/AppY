@@ -1,4 +1,4 @@
-
+//Struct for counting today's MacroNutrients
 struct Count
 {
     //track kcals from today only

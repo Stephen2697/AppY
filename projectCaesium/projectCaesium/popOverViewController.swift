@@ -1,8 +1,6 @@
-//
 //  popOverViewController.swift
-//  123
 //
-//  Created by Stephen Alger on 02/05/2018.
+//  Created by Stephen Alger.
 //  Copyright © 2018 Stephen Alger. All rights reserved.
 //
 
@@ -41,15 +39,4 @@ class popOverViewController: UIViewController {
 //
 //        self.view.layer.addSublayer(gradientLayer)
 //    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -36,7 +36,7 @@ class DashViewController: UIViewController {
         pieChart.drawEntryLabelsEnabled = true
         pieChart.drawHoleEnabled = true
         pieChart.usePercentValuesEnabled = true
-        pieChart.layer.cornerRadius = 10
+        pieChart.layer.cornerRadius = 20
         pieChart.layer.backgroundColor = UIColor(named: "backG")?.cgColor
 
         

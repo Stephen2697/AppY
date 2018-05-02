@@ -12,10 +12,37 @@ class DevViewController: UIViewController {
     
     
     
+    @IBOutlet weak var popOver: UIView!
+    
+    
+    
+    @IBOutlet weak var txtFieldOne: UILabel!
+    @IBOutlet weak var txtFieldTwo: UILabel!
+    
+    @IBAction func BTN(_ sender: UIBarButtonItem)
+    {
+        popOver.isHidden = !popOver.isHidden
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        setupNavBar()
+        popOver.isHidden = true
         
+        txtFieldOne.layer.borderWidth = 0.5
+        txtFieldOne.layer.borderColor = UIColor(named: "redTheme")?.cgColor
+        txtFieldOne.layer.cornerRadius = 10
+        
+        txtFieldTwo.layer.borderWidth = 0.5
+        txtFieldTwo.layer.borderColor = UIColor(named: "redTheme")?.cgColor
+        txtFieldTwo.layer.cornerRadius = 20
+        
+        
+        popOver.layer.borderWidth = 1
+        popOver.layer.borderColor = UIColor(named: "redTheme")?.cgColor
+
+        popOver.layer.cornerRadius = 10
+        popOver.layer.borderWidth = 0.5
+        popOver.layer.borderColor = UIColor(named: "redTheme")?.cgColor
        
         // Do any additional setup after loading the view.
     }
@@ -30,6 +57,7 @@ class DevViewController: UIViewController {
     {
         navigationController?.navigationBar.prefersLargeTitles = true
     }
+    
 
     /*
     // MARK: - Navigation

@@ -246,8 +246,8 @@ class FoodItemTableViewController: UITableViewController {
         
         var components = DateComponents()
         
-        components.day = 30
-        components.month = 4
+        components.day = 1
+        components.month = 5
         components.year = 2018
         components.hour = 15
         components.minute = 15

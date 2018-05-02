@@ -282,7 +282,7 @@
                                 <rect key="frame" x="16" y="535" width="343" height="183"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">A Healthy lifestyle is one which includes a balanced diet. The use of calorie counting apparatus with the aim of its successful implementation requires the user to be aware of the importance of regulating calorie intake and expenditure in a safe daily range. This means the user should consult their physician and research their guided calorie maintenance level given such information as their activity levels, age, sex and height. Then the user can choose to target a daily calorie surplus, maintenance or deficit to meet their longer term weight goals. Excessive daily calorie deficits or surpluses can lead to eating disorders such as anorexia or obesity. Perhaps a safe calorie surplus or deficit should fall within the range of your maintenance level plus or minus 500kcals. Scientific research suggests that to lose 1Lbs (0.45Kg) of Fat the user must reach a net calorie deficit of 3500kcals over a period of time. Results in weight gain or weight loss take persistence and consistency - You Got This, Good Luck!</mutableString>
+                                <string key="text">A Healthy lifestyle is one which includes a balanced diet. The use of calorie counting apparatus with the aim of its successful implementation requires the user to be aware of the importance of regulating calorie intake and expenditure in a safe daily range. This means the user should consult their physician and research their guided calorie maintenance level given such information as their activity levels, age, sex and height. Then the user can choose to target a daily calorie surplus, maintenance or deficit to meet their longer term weight goals. Excessive daily calorie deficits or surpluses can lead to eating disorders such as anorexia or obesity. Perhaps a safe calorie surplus or deficit should fall within the range of your maintenance level plus or minus 500kcals. Scientific research suggests that to lose 1Lbs (0.45Kg) of Fat the user must reach a net calorie deficit of 3500kcals over a period of time. Results in weight gain or weight loss take persistence and consistency - You Got This, Good Luck!</string>
                                 <color key="textColor" red="0.083767740277443103" green="0.083277870451259228" blue="0.084257610103626979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -365,14 +365,14 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Food Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OKd-y6-UWU">
-                                            <rect key="frame" x="108" y="11" width="252" height="21"/>
+                                            <rect key="frame" x="108" y="11" width="175" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pro: 000%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rde-au-PAe">
-                                            <rect key="frame" x="197" y="69" width="80" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pro: 000g" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rde-au-PAe">
+                                            <rect key="frame" x="199" y="69" width="76" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -385,8 +385,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Car: 000%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sa2-66-o5b">
-                                            <rect key="frame" x="108" y="69" width="81" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Car: 000g" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sa2-66-o5b">
+                                            <rect key="frame" x="108" y="69" width="77" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -396,15 +396,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fat: 000%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ylp-eX-gtL">
-                                            <rect key="frame" x="285" y="69" width="78" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fat: 000g" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ylp-eX-gtL">
+                                            <rect key="frame" x="289" y="69" width="74" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00/00/00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVp-f9-Dh9">
-                                            <rect key="frame" x="285" y="11" width="73" height="21"/>
+                                            <rect key="frame" x="290" y="11" width="73" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -444,7 +444,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ux6-DA-ONy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1831" y="-543"/>
+            <point key="canvasLocation" x="1829.5999999999999" y="-543.10344827586209"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ew2-QZ-8xX">
@@ -554,7 +554,7 @@
         <image name="food2" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="R23-TA-Qss"/>
+        <segue reference="dt7-5k-p2J"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.87716564119999996" green="0.01331189114" blue="0.28797959109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>

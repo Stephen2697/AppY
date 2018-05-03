@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qPG-oB-vvN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OtF-OH-PDs">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -353,7 +353,7 @@
                     <navigationItem key="navigationItem" title="Developer Information" id="1A3-BZ-Ewc">
                         <barButtonItem key="leftBarButtonItem" systemItem="reply" id="W46-PW-AWp">
                             <connections>
-                                <segue destination="qPG-oB-vvN" kind="showDetail" id="qX3-5E-2pH"/>
+                                <segue destination="qPG-oB-vvN" kind="showDetail" identifier="LogIn" id="qX3-5E-2pH"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="info" id="XHm-CI-gsw">
@@ -524,6 +524,7 @@
                         <segue destination="8Jq-E2-pRz" kind="relationship" relationship="viewControllers" id="YVn-uz-jPB"/>
                         <segue destination="rIX-S1-arC" kind="relationship" relationship="viewControllers" id="aN0-CB-b9P"/>
                         <segue destination="JMP-Yi-Wta" kind="relationship" relationship="viewControllers" id="GWe-ij-Lke"/>
+                        <segue destination="qPG-oB-vvN" kind="show" identifier="LogInInit" id="7Hx-ig-uzJ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vOH-vA-kMv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -640,6 +641,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Ck3-sS-VN2"/>
+        <segue reference="7Hx-ig-uzJ"/>
         <segue reference="R23-TA-Qss"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.87716564119999996" green="0.01331189114" blue="0.28797959109999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

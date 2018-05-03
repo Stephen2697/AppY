@@ -29,6 +29,8 @@
 		94EF7D4E20927D2F00646A38 /* AppY1024_80_@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 94EF7D4C20927D2F00646A38 /* AppY1024_80_@2.png */; };
 		94EF7D4F20927D2F00646A38 /* AppY1024_120_@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 94EF7D4D20927D2F00646A38 /* AppY1024_120_@2.png */; };
 		94EF7D5120927E3000646A38 /* AppY_120_@2.png in Resources */ = {isa = PBXBuildFile; fileRef = 94EF7D5020927E2F00646A38 /* AppY_120_@2.png */; };
+		94F7D6DA209B538600944527 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F7D6D9209B538600944527 /* LoginViewController.swift */; };
+		94F7D6DC209B578700944527 /* custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F7D6DB209B578700944527 /* custom.swift */; };
 		9E7D92DDBABAB4235A06DB02 /* Pods_123UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12543D8F9627D0925BC9E75 /* Pods_123UITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +83,8 @@
 		94EF7D4C20927D2F00646A38 /* AppY1024_80_@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppY1024_80_@2.png"; path = "projectCaesium/Assets.xcassets/AppY1024_80_@2.png"; sourceTree = "<group>"; };
 		94EF7D4D20927D2F00646A38 /* AppY1024_120_@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppY1024_120_@2.png"; path = "projectCaesium/Assets.xcassets/AppY1024_120_@2.png"; sourceTree = "<group>"; };
 		94EF7D5020927E2F00646A38 /* AppY_120_@2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppY_120_@2.png"; path = "projectCaesium/Assets.xcassets/AppY_120_@2.png"; sourceTree = "<group>"; };
+		94F7D6D9209B538600944527 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		94F7D6DB209B578700944527 /* custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = custom.swift; sourceTree = "<group>"; };
 		9AFACAD284F44BF5F2265890 /* Pods-123Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-123Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-123Tests/Pods-123Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		CF6AE4004D5631EC515D8334 /* Pods_123Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_123Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E12543D8F9627D0925BC9E75 /* Pods_123UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_123UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +174,8 @@
 				94EF7D272090259800646A38 /* BoxCollectionViewCell.swift */,
 				9457FAAF2080FA0A00830784 /* AddFoodViewController.swift */,
 				9457FAB12080FA0A00830784 /* Main.storyboard */,
+				94F7D6D9209B538600944527 /* LoginViewController.swift */,
+				94F7D6DB209B578700944527 /* custom.swift */,
 				94D4FDFB2099CF63009633C6 /* popOverViewController.swift */,
 				946285652097703200D3776C /* DashViewController.swift */,
 				94EF7D2D20920D9000646A38 /* DevViewController.swift */,
@@ -441,10 +447,12 @@
 				94D4FDFC2099CF63009633C6 /* popOverViewController.swift in Sources */,
 				949D5A9D2097634900AA2067 /* Counter.swift in Sources */,
 				949D5A95209717F100AA2067 /* DevViewController.swift in Sources */,
+				94F7D6DC209B578700944527 /* custom.swift in Sources */,
 				949D5A98209717F100AA2067 /* FoodItemTableViewCell.swift in Sources */,
 				949D5A99209717F100AA2067 /* FoodItem.swift in Sources */,
 				949D5A9A209717F100AA2067 /* FoodItemTableViewController.swift in Sources */,
 				949D5A92209717E800AA2067 /* AppDelegate.swift in Sources */,
+				94F7D6DA209B538600944527 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

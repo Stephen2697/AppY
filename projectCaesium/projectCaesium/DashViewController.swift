@@ -2,7 +2,7 @@
 //
 //  Created by Stephen Alger.
 //  Copyright © 2018 Stephen Alger. All rights reserved.
-//
+//  Custom View Controller which presents a dashboard view to the user - importing the charts library
 
 import UIKit
 import Charts
@@ -48,7 +48,7 @@ class DashViewController: UIViewController {
     {
         super.viewWillAppear(animated)
         
-        //access, decode and count macros in foodItems array every time view is selected
+        //access, decode and count macros in foodItems array every time view is selected - keeping up to date data shown
         countMacros()
         consumedMSG.text = "Today You Have Consumed - \(String(format: "%.0f", Count.kcalCounter))kcals!"
         carbDataEntry.value = Double(Count.carbCounter)
@@ -96,6 +96,7 @@ class DashViewController: UIViewController {
         return NSKeyedUnarchiver.unarchiveObject(withFile: FoodItem.ArchiveURL.path) as? [FoodItem]
     }
     
+    //function which counts only today's data
     func countMacros()
     {
         //reset to Zero
@@ -126,8 +127,12 @@ class DashViewController: UIViewController {
                 
                 
             }
+            
+            //console output
             print("not right day!")
         }
+        
+        //console output
         print("Here [\(Count.carbCounter)]")
         print("Here [\(Count.proteinCounter)]")
         print("Here [\(Count.fatCounter)]")

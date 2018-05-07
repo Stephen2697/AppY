@@ -183,29 +183,26 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
             return
         }
         
-        //Memory Assignments - take user input as constants
-        //(??) unrwaps the optional string returned - if nil is returned an empty string ("") is returned.
-        //let Time: Date = Date() //replace with action time
-        
         let Time: Date = Date()
         
-//        let formatter = DateFormatter()
-//        formatter.setLocalizedDateFormatFromTemplate("dd/MM/yy, HH:mm:ss")
-//        let Time = formatter.string(from: Date())
-//
-//        print("This date: [\(formatter.string(from: Date()))]" )
-        
-//        var numberFormatter = NumberFormatter()
-        
-//        numberFormatter.maximumFractionDigits = 2
+        //let formatter = DateFormatter()
+        //formatter.setLocalizedDateFormatFromTemplate("dd/MM/yy, HH:mm:ss")
+        //let Time = formatter.string(from: Date())
+        //print("This date: [\(formatter.string(from: Date()))]" )
+        //var numberFormatter = NumberFormatter()
+        //numberFormatter.maximumFractionDigits = 2
         //numberFormatter.string(from: Float(portionBox.text!))
         //NSNumber(value:myInteger)
         //constrain input
-//        let conGram = numberFormatter.string(from: NSNumber(value: Float(portionBox.text!)!))
-//
-//        let numberFormatter2 = NumberFormatter()
-//        numberFormatter2.numberStyle = NumberFormatter.Style.DecimalStyle
-//        let number = numberFormatter.number(from: conGram!)
+        //let conGram = numberFormatter.string(from: NSNumber(value: Float(portionBox.text!)!))
+        //let numberFormatter2 = NumberFormatter()
+        //numberFormatter2.numberStyle = NumberFormatter.Style.DecimalStyle
+        //let number = numberFormatter.number(from: conGram!)
+        
+        
+        //Memory Assignments - take user input as constants
+        //(??) unrwaps the optional string returned - if nil is returned an empty string ("") is returned.
+        //let Time: Date = Date() //replace with action time
         
         let Gram: Float? = Float(portionBox.text!)
         let Name = mealNameBox.text ?? ""
@@ -224,6 +221,7 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
         
         newFoodItem = FoodItem(Time:Time, Gram: Gram!, Name: Name, Photo: Photo, Carbs: Carbs!, Fats: Fats!, Proteins: Proteins!, Kcals: Kcals!)
         
+        //output new object data to console
         dump(newFoodItem)
     }
     
@@ -238,6 +236,7 @@ class AddFoodViewController: UIViewController, UITextFieldDelegate, UINavigation
         let protein = proteinBox.text ?? ""
         let kcals = caloriesBox.text ?? ""
         
+        //simple boolean logic returning true if the each input receiving varaible is not true
         saveButton.isEnabled = !mealName.isEmpty && !portion.isEmpty && !carb.isEmpty && !fat.isEmpty && !protein.isEmpty && !kcals.isEmpty
     }
 

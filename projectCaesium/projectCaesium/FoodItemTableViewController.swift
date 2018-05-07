@@ -1,7 +1,7 @@
 //  FoodItemTableViewController.swift
 //  Created by Stephen Alger.
 //  Copyright © 2018 Stephen Alger. All rights reserved.
-//
+//  Custom Class dealing with presenting a bespoke Table view, inheriting from the UITableViewController class
 
 import UIKit
 import os.log
@@ -23,8 +23,9 @@ class FoodItemTableViewController: UITableViewController {
         //Manually add an edit button with the required abilities pre-baked!
         navigationItem.leftBarButtonItem = editButtonItem
         
-        if let savedMeals = loadEntries() {
-            foodItems += savedMeals
+        if let savedFood = loadEntries()
+        {
+            foodItems += savedFood
         }
         
         else {
@@ -46,7 +47,7 @@ class FoodItemTableViewController: UITableViewController {
         
         //in the case the segue identifier states we want to add items...
         case "AddItem":
-            os_log("Adding a new meal.", log: OSLog.default, type: .debug)
+            os_log("User adds new food item - coming from AddItem Seque.", log: OSLog.default, type: .debug)
            
         //Show item details
         case "ShowDetail":
@@ -66,7 +67,8 @@ class FoodItemTableViewController: UITableViewController {
             
             //save the index path of the given cell
             guard let indexPath = tableView.indexPath(for: selectedItemCell)
-            else {
+            else
+            {
                 fatalError("The selected cell is not being displayed by the table")
             }
             
@@ -215,9 +217,9 @@ class FoodItemTableViewController: UITableViewController {
         let saved = NSKeyedArchiver.archiveRootObject(foodItems, toFile: FoodItem.ArchiveURL.path)
         if saved
         {
-            os_log("Entry saved.", log: OSLog.default, type: .debug)
+            os_log("Food Item saved.", log: OSLog.default, type: .debug)
         } else {
-            os_log("Failed to Save Entry...", log: OSLog.default, type: .error)
+            os_log("Failed save", log: OSLog.default, type: .error)
         }
     }
     

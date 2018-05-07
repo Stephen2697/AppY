@@ -1,7 +1,8 @@
 //  FoodItemTableViewCell.swift
 //  Created by Stephen Alger
 //  Copyright © 2018 Stephen Alger. All rights reserved.
-//
+//  Custom Table Cell View which inherits from the UITableViewCell Class
+//  Here each cell is formatted to display appropriate macronutrient information
 
 import UIKit
 

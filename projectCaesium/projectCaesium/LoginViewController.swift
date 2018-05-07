@@ -1,8 +1,8 @@
 //
 //  LoginViewController.swift
-//  123
+//  This Custom view controller deals with User Biometric Authentication.
 //
-//  Created by Stephen Alger on 03/05/2018.
+//  Created by Stephen Alger.
 //  Copyright © 2018 Stephen Alger. All rights reserved.
 //
 

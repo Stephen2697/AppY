@@ -2,18 +2,15 @@
 //
 //  Created by Stephen Alger.
 //  Copyright © 2018 Stephen Alger. All rights reserved.
-//
+//  Custom View Controller - simply formatting a few objects and presenting a developper information view
 
 import UIKit
 
 class DevViewController: UIViewController {
     
     
-    
     @IBOutlet weak var popOver: UIView!
-    
-    
-    
+
     @IBOutlet weak var txtFieldOne: UILabel!
     @IBOutlet weak var txtFieldTwo: UILabel!
     
@@ -22,7 +19,8 @@ class DevViewController: UIViewController {
         popOver.isHidden = !popOver.isHidden
     }
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         popOver.isHidden = true
         

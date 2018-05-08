@@ -9,9 +9,24 @@ import Charts
 
 class DashViewController: UIViewController {
 
+    var macActualCalPer: Int = 1
+    var pGrams: Int = 1
+    var cGrams: Int = 1
+    var fGrams: Int = 1
+    
     @IBOutlet weak var pieChart: PieChartView!
     
     @IBOutlet weak var consumedMSG: UILabel!
+    
+    @IBOutlet weak var proteinGrams: UILabel!
+    @IBOutlet weak var carbGrams: UILabel!
+    @IBOutlet weak var fatGrams: UILabel!
+    
+    
+    @IBOutlet weak var proCalPerc: UILabel!
+    @IBOutlet weak var carbCalPerc: UILabel!
+    @IBOutlet weak var fatCalPerc: UILabel!
+    
     
     @IBOutlet weak var supportMSG: UITextView!
     
@@ -24,7 +39,7 @@ class DashViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupNavBar()
+        //setupNavBar()
         
         pieChart.chartDescription?.text = ""
         carbDataEntry.label = "% Carbs"
@@ -51,6 +66,29 @@ class DashViewController: UIViewController {
         //access, decode and count macros in foodItems array every time view is selected - keeping up to date data shown
         countMacros()
         consumedMSG.text = "Today You Have Consumed - \(String(format: "%.0f", Count.kcalCounter))kcals!"
+        proteinGrams.text = "P: \(String(format: "%.0f", Count.proteinCounter))g"
+        carbGrams.text = "C: \(String(format: "%.0f", Count.carbCounter))g"
+        fatGrams.text = "F: \(String(format: "%.0f", Count.fatCounter))g"
+        
+        pGrams = Int(Count.proteinCounter)
+        cGrams = Int(Count.carbCounter)
+        fGrams = Int(Count.fatCounter)
+        
+        let pActGrams: Int = pGrams*4
+        let cActGrams: Int = cGrams*4
+        let fActGrams: Int = fGrams*9
+        
+        
+        macActualCalPer = ((pActGrams+cActGrams+fActGrams) > 0) ? Int(pActGrams+cActGrams+fActGrams) : 1
+        
+        let pActPer =  Int((pActGrams*100) / macActualCalPer)
+        let cActPer =  Int((cActGrams*100) / macActualCalPer)
+        let fActPer =  Int((fActGrams*100) / macActualCalPer)
+        
+        proCalPerc.text = "\(String(pActPer))%cal"
+        carbCalPerc.text = "\(String(cActPer))%cal"
+        fatCalPerc.text = "\(String(fActPer))%cal"
+        
         carbDataEntry.value = Double(Count.carbCounter)
         fatDataEntry.value = Double(Count.fatCounter)
         proteinDataEntry.value = Double(Count.proteinCounter)

@@ -1,5 +1,5 @@
 Project Title: projectCaesium 
-Developer: Stephen Alger C16377163
+Developer: Stephen Alger
 Project Video: https://youtu.be/bMvSIGi_jno
 
 Langauge: Swift
